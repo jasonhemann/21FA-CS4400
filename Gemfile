@@ -53,6 +53,7 @@ gem 'webrick'
 
 # Added because HTMLPipeline suggested these as dependencies for various Filters
 # https://github.com/jch/html-pipeline#dependencies
+gem 'nokogumbo'
 gem 'rinku'
 gem 'escape_utils'
 gem 'email_reply_parser'
