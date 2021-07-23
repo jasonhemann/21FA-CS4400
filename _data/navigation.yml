@@ -1,0 +1,39 @@
+# main links
+main:
+  - title: "Homework"
+    url: /hw/
+  - title: "Lectures"
+    url: /lec/
+  - title: "Office Hours"
+    url: /office-hours/
+  - title: "Schedule"
+    url: /schedule/    
+
+# sidebar links    
+sidebar-site-map:
+  - title: "Homework"
+    url: /hw/
+  - title: "Lectures"
+    url: /lec/
+  - title: "Office Hours"
+    url: /office-hours/
+  - title: "Schedule"
+    url: /schedule/
+  - title: "Piazza"
+    url: http://piazza.com/
+  - title: "People"
+    url: /people/
+  - title: "Syllabus"
+    url: /syllabus/
+  - title: "Tech"
+    url: /tech/
+  - title: "FAQ"
+    url: /FAQ/
+  - title: "Site Source"
+    url: https://github.ccs.neu.edu/jhemann/21FA-CS4400
+  - title: "Enrichment"
+    url: /enrichment/
+  - title: "How's My Driving?"
+    url: /hows-my-driving/
+
+

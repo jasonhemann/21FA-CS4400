@@ -1,0 +1,110 @@
+Welcome to Racket v7.9.0.3 [cs].
+> (define x 15)
+> (set! x 12)
+> x
+12
+> (let ((x 15))
+    (set! x (add1 x))
+    x)
+16
+> (let ((x 15))
+    (begin 
+      (set! x (add1 x))
+       x))
+16
+> (let ((x 5))
+    (let ((cl (lambda (_) x)))
+      (cl 1000)))
+5
+> (let ((x 5))
+    (let ((cl (lambda (_) x)))
+      (cl 1000)))
+5
+> (let ((x 5))
+    (let ((cl (lambda (_) x)))
+      (let ((x 12))
+        (cl 1000))))
+5
+> (let ((x 5))
+    (let ((cl (lambda (_) (+ 3 x))))
+      (let ((x 12))
+        (cl 1000))))
+8
+> (let ((x 5))
+    (let ((cl (lambda (_) (+ 3 x))))
+      (let ((x 12))
+        x)))
+12
+> (let ((x 5))
+    (let ((cl (lambda (_) (+ 3 x))))
+      (begin 
+        (set! x 14)
+        (cl 1000))))
+17
+> (let ((x 5))
+    (let ((cl (lambda (_) (+ 3 x))))
+      (let ((x 120))
+        (begin 
+          (set! x 14)
+          (cl 1000)))))
+8
+> (begin 
+    (set! x (add1 x))
+    (set! y (+ x 5))
+    (+ x y))
+; set!: assignment disallowed;
+;  cannot set variable before its definition
+;   variable: y
+;   in module: top-level
+; [,bt for context]
+> x 
+13
+> (define b (box x))
+> b
+'#&13
+> (box? b)
+#t
+> (unbox b)
+13
+> (set-box! b 99)
+> (box? b)
+#t
+> (unbox b)
+99
+> x
+13
+> (let ((x 12))
+    (let ((subr (lambda (y) 
+                  (begin (set! y (* y y))
+                         1000))))
+      (begin
+        (subr x)
+        x)))
+
+12
+> (begin 12 13 14 15)
+15
+> (begin (+ 2 3) (+ 4 5) (* 6 7))
+42
+> (random 15)
+7
+> (random 7)
+1
+> ((lambda (f)  
+    (+ (f 5) (f 5)))
+   (lambda (n) (random n)))
+3
+> ((lambda (f)  
+    (+ (f 5) (f 5)))
+   (lambda (n) (random n)))
+6
+> ((lambda (f)  
+    (+ (f 5) (f 5)))
+   (lambda (n) (random n)))
+4
+> ((lambda (f)  
+    (+ (f 5) (f 5)))
+   (lambda (n) (random n)))
+1
+> 
+[jhemann:21SP-CS2800] 21:33:53$ 
