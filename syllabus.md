@@ -64,8 +64,8 @@ I will assign overall course grades as follows:
 
      | Category                  | Weight (%) |
      |---------------------------+------------|
-     | Lecture Quizzes           |         15 |
-     | Exams                     |         40 |
+     | Lecture Quizzes           |         20 |
+     | Exams                     |         35 |
      | Homework*                 |         45 |
      | TRACE                     |          1 | 
      | Total                     |        101 |
