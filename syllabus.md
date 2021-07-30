@@ -64,11 +64,11 @@ I will assign overall course grades as follows:
 
      | Category                  | Weight (%) |
      |---------------------------+------------|
-     | Lecture Quizzzes          |         15 |
+     | Lecture Quizzes           |         15 |
      | Exams                     |         40 |
      | Homework*                 |         45 |
      | TRACE                     |          1 | 
-     | Total                     |        102 |
+     | Total                     |        101 |
 
 We (I) will calculate overall numeric grade according to this grading
 scheme. Your final grades will be at least as good as the standard
