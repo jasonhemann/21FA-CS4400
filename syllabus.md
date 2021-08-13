@@ -35,8 +35,8 @@ final grade will not be solely determined by your project and exams.
 These will be discussed in detail below.
 
 This syllabus contains policies and expectations I have established
-for CS4400 and CS5400. Please read carefully the entire syllabus
-before continuing in this course. I intend for these policies and
+for CS4400. Please read carefully the entire syllabus before
+continuing in this course. I intend for these policies and
 expectations to create a productive learning atmosphere for all
 students. Unless you are prepared to abide by these policies and
 expectations, you risk losing the opportunity to participate further
@@ -103,7 +103,7 @@ even those we find compelling may not be implementable as we go.
 
 I expect you to attend each lecture. Your attendance is a prerequisite
 for a substantial portion of the course's grade. I expect students to
-attend every class and remain in class for the duration of the
+attend every class and remain in class throughout the duration of the
 session. Your absence or tardiness will impact your ability to achieve
 course objectives which could hurt your course grade. An absence,
 excused or unexcused, does not relieve a student of any course
@@ -123,10 +123,10 @@ difficulties.
 Homework, consisting of weekly programming assignments, is an
 essential part of the course. Assignments are available by at least
 Thursday evening, and unless otherwise indicated, homework submissions
-are due by 10pm on the Wednesday after I have assigned them. We give a
-few (randomly-varying) extra minutes to account for network time
-disagreements, but beyond this homework assignments are due strictly
-on the day and time listed on the assignment.
+are due by 10 p.m. on the Wednesday after I have assigned them. We
+give a few (randomly varying) extra minutes to account for network
+time disagreements, but beyond this homework assignments are due
+strictly on the day and time listed on the assignment.
 
 To universally, uniformly and preemptively account for any number of
 situations that arise, *I will drop every student's lowest homework
@@ -147,16 +147,11 @@ advantage of office hours, your classmates, ancillary readings, and
 additional support. Follow both the general homework guidelines, as
 well as any special instructions given on the assignment itself.
 
-We will evaluate your submission under the [following rubric]({{
-site.baseurl }}/assets/images/grading_flowchart.png). We provide you a
-test suite for each assignment. *A submission that does not load in
-Racket and execute the test suite without warning or exception will
-automatically receive no better than a U.* To avoid this, ensure that
-sure your submission runs and passes the test suites provide you. We
-allow an unlimited number of submissions per assignment, up to the
+We allow an unlimited number of submissions per assignment, up to the
 deadline.
 
-We will evaluate your work both for correctness and for style. The
+We will evaluate your work both for correctness and for style. We
+provide you an autograder test suite for each assignment. This
 autograder merely ensures that your programs compute the correct
 answers. Our homework problems are as much about _how_ you solve the
 problems as _that_ you solve them. You should use the suggested style
@@ -164,12 +159,14 @@ as demonstrated in class. We are teaching, especially early in the
 course, a particular way of thinking through and solving problems.
 This technique generalizes to the course's subsequent, larger
 problems, and programs in this style serve as input for program
-transformation techniques we will learn.
+transformation techniques we will learn. We will also make a holistic,
+subjective evaluation of your submission under the [following
+rubric]({{ site.baseurl }}/assets/images/grading_flowchart.png).
 
-You should aim for a grade of S or better on homework assignments. If
+You should aim for a grade of 7 or better on homework assignments. If
 you receive a lower grade, make sure to carefully revisit that
 assignment before the next exam. I encourage you to contact an
-instructor for help, even on prior assignments. 
+instructor for help, even on prior assignments.
 
 Homework assignments will almost always contain extra "just dessert"
 problems. These are not required and do not impact your homework
@@ -179,16 +176,14 @@ but we would be remiss in skipping them entirely.
 
 ### Exams 
 
-You will have two long-form in-class exams. You will also have a
-final, that takes place at the date, time, and location given by the
-registrar. Thus there are three exams in total. We calibrate our exams
-to make full use of the grading spectrum, and assume you fully
-understand the lecture material and the skills and techniques
-practiced on homework, and that you can apply them in new ways. They
-are not intended to be "easy" for even accomplished students. The
-instructor is known for exams that use the full width of the grading
-curve; this is deliberate, as the common 30-point standard deviation
-is insufficiently granular. We will provide you a practice exam, and
+You will have two long-form in-class exams. We calibrate our exams to
+make full use of the grading spectrum, and assume you fully understand
+the lecture material and the skills and techniques practiced on
+homework, and that you can apply them in new ways. They are not
+intended to be "easy" for even accomplished students. The instructor
+is known for exams that use the full width of the grading curve; this
+is deliberate, as the common 30-point standard deviation is
+insufficiently granular. We will provide you a practice exam, and
 before each exam we will use the full period for an exam review
 session. Exams offer bonus questions that can help improve your score,
 potentially above 100 points.
