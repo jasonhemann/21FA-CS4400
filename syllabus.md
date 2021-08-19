@@ -308,7 +308,9 @@ perhaps lecture notes from a friend.
 Students of course play an integral part in ensuring they receive the
 full benefit of their coursework. The students of 4400 are certainly
 beholden to the academic integrity policies of [Northeastern
-University](http://www.northeastern.edu/osccr/academic-integrity-policy/),
+University](http://www.northeastern.edu/osccr/academic-integrity-policy/)
+and as laid out in the [student
+handbook](https://cpb-us-w2.wpmucdn.com/sites.northeastern.edu/dist/8/569/files/2020/09/2021-22-UG-Student-Handbook.pdf),
 the [Khoury
 College](https://www.khoury.northeastern.edu/information-for-overview/current-undergrad/undergraduate-advising-academic-support/academic-policies/).
 
