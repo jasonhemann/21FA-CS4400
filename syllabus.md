@@ -83,13 +83,17 @@ I will base some portions of your homework and lecture quiz
 grades on completion and submission of the relevant exercises. I will
 base the remaining portion of each on correctness. 
 
+
 ### Total Running Grade Calculation
 
-We will track the completion portions of your exam and homework
-grades, as well as your project grades, in handins. We will maintain a
-record of the remaining grades, and will update you with the *current*
-status of that before the Add/Drop deadline. Please ignore the grade
-tracker on Canvas. 
+We will track the completion portions of your lab and homework grades,
+as well as your project grades, on
+[Canvas](https://canvas.northeastern.edu/). You will have an
+approximate assessment of your *current* grade status before the
+Add/Drop deadline. We cannot give you a standing completion percentage
+of the participation component of your grade because, logically, there
+[are no pop
+quizzes](https://en.wikipedia.org/wiki/Unexpected_hanging_paradox).
 
 ### Collaborative Course Construction and Feedback
 
@@ -101,22 +105,25 @@ even those we find compelling may not be implementable as we go.
 
 ## Participation
 
-I expect you to attend each lecture. Your attendance is a prerequisite
-for a substantial portion of the course's grade. I expect students to
-attend every class and remain in class throughout the duration of the
-session. Your absence or tardiness will impact your ability to achieve
-course objectives which could hurt your course grade. An absence,
-excused or unexcused, does not relieve a student of any course
-requirement. Lecture content quizzes serve as proxies for
-participation and thus attendance, as well as to gauge students'
-understanding.
+I expect you to attend each lecture. We will [not take
+attendance](https://vm.tiktok.com/ZMJBoQovg/) as such, but attendance
+is a prerequisite for participation, a substantial portion of your
+grade for this course. I expect students to attend every class and
+remain in class throughout the duration of the session. Your absence
+or tardiness will impact your ability to achieve course objectives
+which could hurt your course grade. An absence, excused or unexcused,
+does not relieve a student of any course requirement. Lecture content
+quizzes serve as proxies for participation and thus attendance, as
+well as to gauge students' understanding.
 
 ### Lecture Quizzes/Polls
 
 Expect to have regular content quizzes during or toward the end of
 lecture. These act as a forcing function, encouraging attention to
 lectures and/or the ancillary readings and to alert me to students'
-difficulties.
+difficulties. Sometimes we take these for completion, others for
+accuracy. These lecture quizzes belongs under your participation
+grade.
 
 ## Homework
 
@@ -140,12 +147,13 @@ missed submissions with you at office hours.
 You should make every effort to complete and submit each assignment.
 If you are struggling with an assignment, it best to turn in what you
 can complete and to seek help. Homework assignments will build on one
-other conceptually, and some later assignments require the successful
-completion of problems from earlier ones. **Do not fall behind.** If
-you feel yourself falling behind, seek help immediately and take
-advantage of office hours, your classmates, ancillary readings, and
-additional support. Follow both the general homework guidelines, as
-well as any special instructions given on the assignment itself.
+another conceptually, and some later assignments require the
+successful completion of problems from earlier ones. **Do not fall
+behind.** If you feel yourself falling behind, seek help immediately
+and take advantage of office hours, your classmates, ancillary
+readings, and additional support. Follow both the general homework
+guidelines, as well as any special instructions given on the
+assignment itself.
 
 We allow an unlimited number of submissions per assignment, up to the
 deadline.
