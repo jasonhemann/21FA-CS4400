@@ -252,7 +252,7 @@ disruptive, and is therefore prohibited during class.
 I do not permit electronic video and/or audio recording of class
 without prior permission. Unless the student obtains permission from
 the instructor electronic video and/or audio recording of class is
-prohibited. If permission is granted, any distribution of the
+prohibited. If you receive permission, any distribution of the
 recording is prohibited. Students with specific electronic recording
 accommodations authorized by the [DRC](academic-accommodations) do not
 require instructor permission; however, the instructor must be
@@ -337,16 +337,10 @@ DRC](http://www.northeastern.edu/drc/#fp-blog-entry:~:text=Contact%20Information
 
 ## Technology and Platforms
 
-As a course and a student body, we are more remote than usual, and
-preferable. We will leverage a number of Northeastern's technology
-platforms to help bridge the chasm. Your first lab assignment will
-walk you through installing and configuring these.
-
 We will use a variety of tools and platforms to facilitate teaching
-and learning at a somewhat remote distance and to compensate for this
-unconventional semester. These include Racket, Khoury Office Hours,
-and Piazza. Please see the [technology page]({{ site.baseurl }}/tech/)
-for more details.
+and learning over the semester. These include Racket, Khoury Office
+Hours, and Piazza. Please see the [technology page]({{ site.baseurl
+}}/tech/) for more details.
 
 ## Acknowledgments 
 
