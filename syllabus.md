@@ -322,6 +322,27 @@ handbook](https://cpb-us-w2.wpmucdn.com/sites.northeastern.edu/dist/8/569/files/
 the [Khoury
 College](https://www.khoury.northeastern.edu/information-for-overview/current-undergrad/undergraduate-advising-academic-support/academic-policies/).
 
+## Equity and Compliance
+
+One of our responsibilities in supporting student learning 360° is to
+help create a safe learning environment both in person and
+virtually. You should carefully consult the university's [relevant
+policies](https://www.northeastern.edu/ouec/title-ix-policy-2/), and
+if you have or experience any violations of the above I encourage you
+to take full advantage of the [university
+resources](https://www.northeastern.edu/ouec/resources/main-campus-resources/).
+
+It is also important that you know that federal regulations and
+University policy require me to promptly convey any information about
+certain kinds of misconduct known to me to our Deputy Title IX
+Coordinator or IU’s Title IX Coordinator. In that event, they will
+work with a small number of others on campus to ensure that
+appropriate measures are taken and resources are made available to the
+student who may have been harmed. Protecting a student’s privacy is of
+utmost concern, and all involved will only share information with
+those that need to know to ensure the University can respond and
+assist. 
+
 ## Academic Accommodations 
 
 If you have accommodations from the [Disability Resource Center
