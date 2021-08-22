@@ -37,18 +37,6 @@ classes: wide
 
 
 
-
-
-
-
-
-
-<!-- | 4 /  7 | Wed | introduction to miniKanren                     |                                                                                                                              | mk-convert.pdf [a](http://www.cs.indiana.edu/l/www/classes/c311/miniaop.pdf) [b](http://www.cs.indiana.edu/l/www/classes/c311/minirop.pdf) [c](http://www.cs.indiana.edu/l/www/classes/c311/minilop.pdf) [d](http://www.cs.indiana.edu/l/www/classes/c311/miniunify.pdf) | -->
-<!-- | 4 / 12 | Mon | NC Provost's Day                               |                                                                                                                              |                                                                                                                                                                                                                                                                          | -->
-<!-- | 4 / 14 | Wed | miniKanren implementation                      |                                                                                                                              | microkanren.pdf                                                                                                                                                                                                                                                          | -->
-<!-- | 4 / 19 | Mon | More Interpreters                              |                                                                                                                              |                                                                                                                                                                                                                                                                          |  -->
-<!-- | 4 / 21 | Wed | Final Exam Review / Closing Lecture            |                                                                                                                              |                                                                                                                                                                                                                                                                          | -->
-
 | EOPL | "Essentials of Programming Languages" |
 | SAOP | "Scheme and the Art of Programming"   |
 
