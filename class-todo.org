@@ -1,0 +1,15 @@
+
+* Remaining Setup Decisions
+** TODO Homework Groups? No
+** Objective vs subjective grades for assignments -- how to account?
+*** Just give both?
+** Gradescope 
+*** set-up for all assignments including a9 and macros.
+*** Move test suites into gradescope set-up.
+*** Construct daily quiz questions for content
+** Canvas
+*** Set up gradescope things to match with Canvas assignments
+*** Allocate canvas points into full grade visibility 
+*** Publish canvas page
+** Piazza
+
