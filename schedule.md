@@ -35,7 +35,7 @@ classes: wide
 | Dec.  | 8    | Wed | Closing Lecture                                |                                                                                                                                |                                                                                                                                                                                                                                       |
 
 
-
+## Texts
 
 | EOPL | "Essentials of Programming Languages" |
 | SAOP | "Scheme and the Art of Programming"   |
