@@ -144,6 +144,10 @@ homework clemency; but for exceptional circumstances, I **shall not**
 accept late homework otherwise; we are, however happy to go over these
 missed submissions with you at office hours.
 
+You will have ten regular homework assignments plus that one bonus
+assignment; I will make the bonus assignment available between
+Homework 9 and Homework 10.
+
 You should make every effort to complete and submit each assignment.
 If you are struggling with an assignment, it best to turn in what you
 can complete and to seek help. Homework assignments will build on one
@@ -368,7 +372,9 @@ Hours, and Piazza. Please see the [technology page]({{ site.baseurl
 I derived many of our course's lecture's contents and topics, as well
 as assignments, from [Dan
 Friedman](https://legacy.cs.indiana.edu/~dfried/)'s 311 at Indiana
-University. [Lindsey Kuper](https://users.soe.ucsc.edu/~lkuper/)
-inspires some of this site as well as being all-around inspirational.
+University. We use [Krishnamurthi's `gradescope-racket` autograde
+framework](https://github.com/shriram/gradescope-racket). [Lindsey
+Kuper](https://users.soe.ucsc.edu/~lkuper/) inspires some of this site
+as well as being all-around inspirational.
 
 ![In the syllabus]({{ site.baseurl }}/assets/images/syllabus.gif "Might just be worth checking.")
