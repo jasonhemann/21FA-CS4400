@@ -272,11 +272,28 @@ of them.
 
 ### Scheduled Office Hours
 
-Course personnel will make ourselves available for 8-10 hours of
+Course personnel will make ourselves available for 4-6 hours of
 [office hours]({{ site.baseurl}}/office-hours/) available weekly,
 concentrated toward assignment due dates. If our office hours schedule
 in particularly ill-suited to your class schedule, let me know and we
-may be able to adjust them.
+may be able to adjust them. As per current university guidance, we
+will hold these office hours remotely.
+
+### Gradescope
+
+We will be using Gradescope this term, which allows us to provide fast
+and accurate feedback on your work. Homework will be submitted through
+Gradescope, and homework and exam grades will be returned through
+Gradescope. As soon as grades are posted, you will be notified
+immediately so that you can log in and see your feedback. For
+clarification on grades, please meet with your grader during office
+hours.
+
+To access Gradescope, click the Log In button on the Gradescope
+website and enter your university email. Then enter your existing
+password if you have one or click Forgot Password to reset it or
+create one for the first time.
+
 
 ### Piazza Forums
 
