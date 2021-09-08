@@ -157,7 +157,6 @@ Remembering the natural recursion.
  - `lambda`
  - 
 
-
 ### You all try!
 
 `memv` - have it mirror Racket's `memv`
