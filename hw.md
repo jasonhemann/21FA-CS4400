@@ -6,7 +6,7 @@ sort: due
 ---
 
 Please find your homework assignments on Gradescope. From Canvas, you
-will find links to starter files. You can also find them available at our class's [repository]({{ github.repository }}).
+will find links to starter files. You can also find them available at our class's [repository]({{ site.github }}{{ site.repository }}).
 
 # Assignment Guidelines
 

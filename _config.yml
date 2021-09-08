@@ -32,7 +32,7 @@ title_separator          : "-"
 subtitle                 : "Home Page"
 name                     : "Jason Hemann"
 description              : "Hemann's Programming Languages Course"
-github                   : "http://github.ccs.neu.edu"
+github                   : [metadata]
 # e.g. http://example.com
 url                      : "http://pages.github.ccs.neu.edu" 
 # the site subpath, e.g. /blog
