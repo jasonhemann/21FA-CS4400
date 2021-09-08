@@ -1,7 +1,12 @@
 ---
 title: Class intro; Racket 101
-date: 2021-01-20
+date: 2021-09-08
 ---
+
+# Objectives
+
+  - Orient students to the class
+  - introduce our style of programming
 
 # Orientation
   
@@ -13,6 +18,7 @@ date: 2021-01-20
 
   About Your Instructor: 
    - Jason Hemann
+   - Associate Teaching Professor, Northeastern
    - Doctorate in Computer Science, Indiana University
    - Concentration in Logic
    - Philosophy undergraduate
@@ -64,33 +70,34 @@ date: 2021-01-20
     1. Use this replay to help you decipher and cement concepts in your head
 	1. Working through in this level of detail will force you to grapple
 
-# If you have not already ...
+## The primary tool we'll be using--Racket and DrRacket
+ - Download a new version
+ - Different languages
+ - Additional tools and packages
+ 
 
-## Download and (re-)install DrRacket
+## 15m - stop and everyone go install, we can try and help.
 
-Go to `https://download.racket-lang.org/`, and you can download and
-install Racket and the DrRacket IDE for your platform. If you have
-used DrRacket in a previous course, you should upgrade to the latest
-version.
-
-We will go ahead and install a handful of additional plugins. There
-are for right now a couple of different tweaks and toggles we can hit.
-
-Via the package manager (on OSX `File>Package manager`) , install
-`faster-minikanren`.
+DrRacket Go to `https://download.racket-lang.org/`
 
 We will use these at the appropriate time. 
 
-
 # All the Racket you need to know
 
-## `cons`, `car`, and `cdr`.
+## `cons`, `car`, and `cdr`. The story, lisp printing conventions.
 
 ```racket
 ;; (cons (car (cons α β)) (cdr (cons α β)))
 ;; =
 ;; (cons α β)
 ```
+
+## Different equalities
+
+
+
+## Natural recursion
+
 
 ## Important to write *these* style of programs
 
@@ -129,6 +136,8 @@ We will use these at the appropriate time.
 
 ### `rember8` 
 
+Remembering the natural recursion.
+
 ```racket
 ;; '(4  8 5 8 7 3 8) => '(4  5 7 3) 
 ;;    '(8 5 8 7 3 8) =>    '(5 7 3)
@@ -140,17 +149,17 @@ We will use these at the appropriate time.
     (else (cons (car ls) (rember8 (cdr ls))))))
 ```
 
-### `rember8*`
+## Some additional basic operations
 
-```racket
-(define (rember8* ls)
-  (cond
-    ((null? ls) '())
-    ((pair? (car ls)) (cons (rember8* (car ls)) (rember8* (cdr ls))))
-    ((eqv? (car ls) 8) (rember8* (cdr ls)))
-    (else (cons (car ls) (rember8* (cdr ls))))))
+ - `zero?`
+ - `add1`, `sub1`
+ - `+`, `-`
+ - `lambda`
+ - 
 
-(rember8* '(4 (8 (5 (((8)) 7))) (3 8)))
-```
-	
-### Arithmetic examples, if we get there. 
+
+### You all try!
+
+`memv` - have it mirror Racket's `memv`
+
+
