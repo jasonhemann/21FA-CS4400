@@ -15,6 +15,9 @@
 # Any custom variable you create will be accessible in the templates
 # via {{ site.myvariable }}.
 
+# Working with YAML variables
+# https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial#example-6-variables
+
 # BTW: >- means to ignore newlines until next colon entry e.g. "baseurl:".
 
 #######################

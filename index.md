@@ -28,6 +28,6 @@ current and upcoming future trends.
 ## Lecture
 
 
- | Lecture | Instructor | Dates | Time       | Location               |
- |  10545  | Jason      | MW    | 2:50-4:30  | Mugar Life Science 201 |
+ | Lecture | Instructor | Dates | Time       | Location        |
+ |  10545  | Jason      | MW    | 2:50-4:30  | 129 Hurtig Hall |
 
