@@ -29,7 +29,7 @@ read through it carefully before beginning the rest of the assignment.
 
  1. Define and test a procedure countdown that takes a natural number
 and returns a list of the natural numbers less than or equal to that
-number, in descending order.
+number, in descending order. Our natural numbers begin at zero.
 
 |#
 
