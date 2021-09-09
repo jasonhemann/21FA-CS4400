@@ -123,7 +123,13 @@ lecture. These act as a forcing function, encouraging attention to
 lectures and/or the ancillary readings and to alert me to students'
 difficulties. Sometimes we take these for completion, others for
 accuracy. These lecture quizzes belongs under your participation
-grade.
+grade. To account for illnesses, other commitments that come up, and
+all the other vagaries of life, I'll drop 5/25 of these quizzes for
+you all. I don't know that I'd be comfortable dropping 1/5 of them
+under normal circumstances, but at least in the current situation that
+seems like a reasonable precaution. If you think you're sick, please
+do get yourself checked and be safe.
+
 
 ## Homework
 
