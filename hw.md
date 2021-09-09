@@ -7,8 +7,7 @@ sort: due
 
 Please find your homework assignments on Gradescope. You may find
 links to starter files. You can also find them available at our
-class's [repository]({{ site.sole }}{{ site.repository
-}}) in `/assets/code`.
+class's [repository]({{ site.repository }}) in `/assets/code`.
 
 # Assignment Guidelines
 
