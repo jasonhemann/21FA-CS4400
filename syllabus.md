@@ -186,6 +186,14 @@ grade--they are there for your fun and excitement. Often, these
 problems explore interesting topics we will not have get to in class,
 but we would be remiss in skipping them entirely.
 
+Homeworks sets will almost always contain some brainteaster questions.
+These are merely optional for those who want something extra to play
+with. Often these extra problems show something interesting that we
+haven't had the time to talk about in class. Usually there'll be some
+dessert problems as well. These are also optional, and vary from
+suuuper tricky to things we haven't yet solved to our satisfaction.
+
+
 ### Exams 
 
 You will have two long-form in-class exams. We calibrate our exams to
