@@ -259,6 +259,7 @@ pitch.
 - map-fr
 - append-fr
 - reverse-fr
+- cons-every-fr
 - binary->natural-fr
 - append-map-fr
 - set-difference-fr
