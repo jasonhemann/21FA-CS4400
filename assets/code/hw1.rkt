@@ -210,9 +210,10 @@ all the elements in s1 that are not in s2.
 
 19. In mathematics, the power set of any set S, denoted P(S), is the
 set of all subsets of S, including the empty set and S itself. The
-procedure powerset takes a list and returns the power set of the
+procedure combinations takes a list and returns the power set of the
 elements in the list. Implementations may different in the exact order
-of their results' sublists.
+of their results' sublists. You should not use Racket's combinations
+in your solution.
 
 |# 
 
@@ -224,8 +225,9 @@ sets (again, by our agreed upon convention, sets are lists that don't
 have duplicates). The result is a list of tuples (i.e. a list of
 lists). Each tuple has in the first position an element of the first
 set, in the second position an element of the second set, etc. The
-output list should contains all such combinations. The exact order of
-your tuples may differ; this is acceptable.
+output list should contains all such tuples. The exact order of your
+tuples may differ; this is acceptable. You should not use Racket's
+cartesian-product in your solution.
 
 |#
 
@@ -263,7 +265,7 @@ pitch.
 - binary->natural-fr
 - append-map-fr
 - set-difference-fr
-- powerset-fr
+- combinations-fr
 - cartesian-product-fr
 
 |# 
