@@ -105,9 +105,10 @@ in your definition.
 #| 
 
 8. Define and test a procedure append that takes a list l and any
-racket datum d, and returns a new racket datum with the elements of l
-prepended. This should work for any racket datum d, but testing
-against the data we have talked about in class is sufficient.
+racket datum (any old racket, be it a list or not) d, and returns a
+new racket datum with the elements of l prepended. This should work
+for any racket datum d, but testing against the data we have talked
+about in class is sufficient.
 
 |# 
 
@@ -155,6 +156,14 @@ and returns a list with x consed to the front of each element of l.
 13. Define and test a procedure binary->natural that takes a flat list
 of 0s and 1s representing an unsigned binary number in reverse bit
 order and returns that number. For example:
+
+'()      ;; 0
+'(1)     ;; 1
+'(0 1)   ;; 2
+'(1 1)   ;; 3
+'(0 0 1) ;; 4
+'(1 0 1) ;; 5
+'(0 1 1) ;; 6
 
 |# 
 
