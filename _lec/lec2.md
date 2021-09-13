@@ -128,11 +128,10 @@ For our purposes, for constructing anonymous recursive or anonymous mutually rec
    - `cond`s same if-then-else structure, but uses the "shape" of an expression instead.
 
 
-### `sum-values` 
+### `sum-tree` 
 
-Define a datatype. 
-Match against the shapes of that datatype. 
-
+When you /define/ the datatype, you can /match/ against it's pieces.
+shape-wise comparison
 
 # quasiquote and unquote
 
