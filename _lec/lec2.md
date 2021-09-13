@@ -19,7 +19,7 @@ date: 2021-09-13
 
 ### `count`
 
-;; A 
+A function we wrote using the style of natural recursion.
 
 ```racket
 (define (count x ls)
