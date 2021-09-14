@@ -4,6 +4,14 @@ layout: single
 classes: wide
 ---
 
+### Ancillary/Supplementary Videos 
+
+ - [Micinski on cons/improper lists/diagrams](https://www.youtube.com/watch?v=7NA9HZdlR0g)
+
+
+### Enrichment 
+
+
 - [More on the Ackermann Function + History]({{ site.baseurl }}/assets/code/ack-etc.rkt)
 - [The first recursive but not primitive-recursive function](http://www.sciencedirect.com/science/article/pii/0315086079900247])
 
