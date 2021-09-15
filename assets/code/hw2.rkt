@@ -235,6 +235,10 @@ expression where you need to fill in the lexical address, that you
 already have all the information you need to figure it out. Then code
 that.
 
+> (lex '(lambda (y) (lambda (x) (x y))) '())
+'(lambda (lambda ((var 0) (var 1))))
+
+
 If you find the list-index-ofv function from your hw1
 will help you, copy it over to this file. 
 
