@@ -3,7 +3,8 @@ title: Free, bound, and lexical address
 date: 2021-09-15
 ---
 
-# Questions 
+# Questions and Update
+  + I renamed some questions on hw to correspond w/these notes. 
   + Brief Homework questions 
 
 # `lambda` calculus expressions as datatype.
