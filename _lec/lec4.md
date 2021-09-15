@@ -57,13 +57,11 @@ into `car`s and `cdr`s.
 ;; Expr -> Listof Symbol
 ;; Takes an expression and returns a bag (set with duplicates) of 
 ;; all the formal parameters in the expression.
- (define (bag-of-parameters e)
-   (match e
-	 [`,y #:when (symbol? y)                      ]
-
-	 [`(lambda (,x) ,body)                        ]
-
-	 [`(,rator ,rand)                           ])))
+(define (bag-of-parameters e)
+  (match e
+	[`,y #:when (symbol? y)        ]
+	[`(lambda (,x) ,body)          ]
+	[`(,rator ,rand)               ])))
 ```
 
 # Dissecting an expression in the λ-calculus
