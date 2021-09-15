@@ -99,6 +99,9 @@ definition of a predicate.) extend should return a predicate. The
 returned predicate should hold for exactly those things that are eqv?
 to x or satisfy pred.
 
+> ((extend 1 even?) 1)
+#t
+
 |# 
 
 
@@ -143,20 +146,20 @@ whether the expression contains a reference to that variable.
 
 #| 
 
-7. Define and test a procedure vars that takes a lambda-calculus
+7. Define and test a procedure var-references that takes a lambda-calculus
 expression and returns a list containing all the variable references
 (the variable name itself) in the expression. This should be a
 straightforward modification of lambda->lumbda, and the order of the
-variables in your answer does not matter. 
+variables in your answer does not matter.
 
 |#
 
 
 #| 
 
-8. Define and test a function called unique-vars that behaves like
-vars but returns a set---i.e. it eliminates duplicates as it
-evaluates. Use union in your definition.
+8. Define and test a function called unique-var-references that
+behaves like var-references but returns a set---i.e. it eliminates
+duplicates as it evaluates. Use union in your definition.
 
 |#
 
@@ -185,7 +188,7 @@ otherwise.
 
 #| 
 
-11. Define and test a procedure unique-free-vars that takes a
+11. Define and test a procedure unique-free-references that takes a
 lambda-calculus expression and returns a set (represented as a list)
 of all the free variable references in that expression. Order doesn't
 matter, but the list must not contain duplicate variables. You may
@@ -203,7 +206,7 @@ point.
 
 #| 
 
-12. Define and test a procedure unique-bound-vars that takes a
+12. Define and test a procedure unique-bound-references that takes a
 lambda-calculus expression and returns a set (represented as a list)
 of all the bound variable references in the input expression. Order
 doesn't matter, but the list must not contain duplicate variables.
