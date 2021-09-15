@@ -56,8 +56,8 @@ into `car`s and `cdr`s.
 ```racket
 ;; Expr -> Listof Symbol
 ;; Takes an expression and returns a bag (set with duplicates) of 
-;; all the formal parameters in the expression.
-(define (bag-of-parameters e)
+;; all the variable declarations in the expression.
+(define (bag-of-declarations e)
   (match e
 	[`,y #:when (symbol? y)        ]
 	[`(lambda (,x) ,body)          ]
