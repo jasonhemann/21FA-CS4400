@@ -41,12 +41,12 @@
 
 ;; In a subset of Racket where lambdas have only one argument, the
 ;; lexical address of a variable is the number of lambdas between the
-;; place where the variable is bound (i.e. the formal parameter) and
-;; the place where it occurs. The o at the very bottom of the
-;; following expression is a bound occurrence. It has a lexical
-;; address of 4, because there are four lambda expressions between the
-;; formal parameter o at the top and the occurrence of o at the
-;; bottom.
+;; place where the variable is declared (i.e. the formal parameter)
+;; and the place where it is referenced. The o at the very bottom of
+;; the following expression is a bound variable reference. It has a
+;; lexical address of 4, because there are four lambda expressions
+;; between the formal parameter o at the top and the reference to o at
+;; the bottom.
 
 (lambda (o)
   (lambda (r)
@@ -294,7 +294,8 @@ example:
 
 ;; In order to return multiple values, you should see the Racket
 ;; documentation on values and let-values (and call-with-values though
-;; you probably won't need it to define var-occurs-both?).
+;; you probably won't need it to define
+;; free-and-bound-references-occur?).
 
 #| 
 
