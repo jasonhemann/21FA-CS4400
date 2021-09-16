@@ -24,7 +24,7 @@
 ;; '((a . 5) (b . (1 2)) (c . a))
 
 ;; You must use match in each of the problems from section 2 of this
-;; assignment, unless the assigrment states otherwise. 
+;; assignment, unless the assignment states otherwise. 
 
 ;; Most of section 2's problems require both match and recursion on
 ;; lambda-calculus expressions.
@@ -107,8 +107,8 @@ to x or satisfy pred.
 
 #| 
 
-4. Define and test a procedure walk-symbol that takes a Racket datum
-and an association list of symbols to Racket data. Your procedure
+4. Define and test a procedure walk-symbol that takes a Racket datum x
+and s, an association list of symbols to Racket data. Your procedure
 should search through s for the value associated with x. If the
 associated value is a symbol, it too must be walked in s. If x has no
 association, then walk-symbol should return x. You should use `assv`
