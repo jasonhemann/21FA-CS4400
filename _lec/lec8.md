@@ -1,7 +1,7 @@
 ---
 title: Equational reasoning and higher order functions
 date: 2021-10-04
-
+---
 
 
 # Arithmetic examples.
