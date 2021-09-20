@@ -1,34 +1,54 @@
 ---
-title: Representation independence wrt env, closures
-date: 2021-02-10
+title: (Lexical vs) Dynamic Scope
+date: 2021-09-29
 ---
 
 
 # Questions
 
--   Homework - how did that go?
--   Those of you who\'ve gotten started on the interpreter. Eh?
+-   Homework - coming due Wednesday.
+-   I deputize you to explain and to help others.
 
-# Review, the interpreter
+# History: The bad days
 
-We wrote an interpreter for a small language. In a sense we can see our
-interpreter as *defining* the meaning of expressions in that language.
+# Dynamic Scope
 
-# Interlude: A view from 10,000 feet.
+## How we might have (mis-)implemented our interpreter
 
-Scheme -\> C
+```racket
+#lang racket
 
-# Representation Independence
+(define (apply-env env y)
+  (env y))
 
-These are homework problems. You\'ll want these notes.
+(define (extend-env x a env)
+  (λ (y) (if (eqv? x y) a (apply-env env y))))
 
-We want to abstract out an interface. Program to the interface. So we
-can change the implementation, and user code won\'t matter. In some
-sense, these say what it *means* to be an environment (resp., closure).
+(define (valof exp env)
+  (match exp
+    [`(* ,n1 ,n2) (* (valof n1 env) (valof n2 env))]
+    [`(sub1 ,n1) (sub1 (valof n1 env))]
+    [`(zero? ,n1) (zero? (valof n1 env))]
+    [`,y #:when (symbol? y) (env y)]
+    [`,n #:when (number? n) n]
+    [`(if ,n1 ,n2 ,n3) (if (valof n1 env) (valof n2 env) (valof n3 env))]
+    [`(let ([,x ,e]) ,body) (let ([a (valof e env)])
+			      (valof body (extend-env x a env)))]
+    [`(λ (,x) ,body) `(lambda (,x) ,body)]
+    [`(,rator ,rand) (match-let ([`(lambda (,x) ,body) (valof rator env)]
+				 [a (valof rand env)])
+		       (valof body (extend-env x a env)))]))
 
-1.  RI wrt environments
-2.  RI wrt closures
+(define (empty-env)
+  (λ (y) 
+    (error 'empty-env "unbound identifier ~s\n" y)))
+```
 
-When we have made our interpreter representation-independent wrt
-environments, closures, we can change the implementation, and because we
-are programming to an interface, the usage code doesn\'t have to change.
+## What happens as a consequence?
+
+## Syntax vs. Semantics
+
+# Examples
+
+# Is this a real thing? (sitting example)
+
