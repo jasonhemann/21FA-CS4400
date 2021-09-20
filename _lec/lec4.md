@@ -6,8 +6,8 @@ date: 2021-09-20
 # Questions
 
 -   Homework coming due soon. Yeah?
--   Great questions! Keep up the good and awesomeness!
--   Debugging help.
+-   Great Piazza questions! Keep up the good and awesomeness!
+-   Debugging help. Stub out functions to get our outputs
 
 # Review
 
