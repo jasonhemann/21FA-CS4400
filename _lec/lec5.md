@@ -22,3 +22,14 @@ pattern as writing any other program over `lambda`-calculus expressions.
 
 We will add some forms beyond just our 3 lines, but we don\'t *have* to.
 And you could add more if you wanted, too!
+
+## We can add some lines for some other primitives 
+
+- `numbers`
+- `if`
+- `add1`
+- `*`
+
+Note how these aren't *exactly* completely independent, but I did it
+b/c I want you to be able to run your programs in Racket
+
