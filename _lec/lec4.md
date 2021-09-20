@@ -6,6 +6,7 @@ date: 2021-09-20
 # Questions
 
 -   Homework coming due soon. Yeah?
+-   I had set autograder doing some other point scales. Please notice adjusted.
 -   Great Piazza questions! Keep up the good and awesomeness!
 -   Debugging help. Stub out functions to get our outputs
 
