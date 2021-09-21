@@ -1,4 +1,5 @@
 #lang racket
+(require rackunit)
 
 #| RI Closures and Dynamic Scope |# 
 
@@ -30,13 +31,134 @@
 
 #| Regression Testing and Enhancing |# 
 
+
 #| 
 
 1. The following regression tests from your last assignment should
-still work on your newly-renamed value-of and its associated
-environment help functions.
+still work on your re-copied lex and your newly-renamed value-of and
+its associated environment help functions.
 
 |# 
+
+  (check-equal?
+   (apply-env (extend-env 'x 5 (empty-env)) 'x)
+   5)
+  (check-equal? 
+   (apply-env (extend-env 'x 7 (extend-env 'x 5 (empty-env))) 'x)
+   7)
+  (check-equal?
+   (apply-env (extend-env 'x 7 (extend-env 'y 5 (empty-env))) 'y)
+   5)
+
+  (check-equal?
+   (value-of
+    '((lambda (x) (if (zero? x)
+                      #t
+                      #f))
+      0)
+    (empty-env))
+   #t)   
+  (check-equal?
+   (value-of 
+    '((lambda (x) (if (zero? x) 
+                      12 
+                      47)) 
+      0) 
+    (empty-env))
+   12)    
+  (check-equal?
+   (value-of
+    '(let ([y (* 3 4)])
+       ((lambda (x) (* x y)) (sub1 6)))
+    (empty-env))
+   60)
+  (check-equal?
+   (value-of
+    '(let ([x (* 2 3)])
+       (let ([y (sub1 x)])
+         (* x y)))
+    (empty-env))
+   30)
+  (check-equal?
+   (value-of
+    '(let ([x (* 2 3)])
+       (let ([x (sub1 x)])
+         (* x x)))
+    (empty-env))
+   25)
+  (check-equal?
+   (value-of
+    '(((lambda (f)
+         (lambda (n) (if (zero? n) 1 (* n ((f f) (sub1 n))))))
+       (lambda (f)
+         (lambda (n) (if (zero? n) 1 (* n ((f f) (sub1 n)))))))
+      5)
+    (empty-env))
+   120)
+
+  (check-equal?
+   (lex '(lambda (x) x) '())
+   '(lambda (var 0)))
+  (check-equal?
+   (lex '(lambda (y) (lambda (x) y)) '())
+   '(lambda (lambda (var 1))))
+  (check-equal?
+   (lex '(lambda (y) (lambda (x) (x y))) '())
+   '(lambda (lambda ((var 0) (var 1)))))
+  (check-equal?
+   (lex '(lambda (x) (lambda (x) (x x))) '())
+   '(lambda (lambda ((var 0) (var 0)))))
+  (check-equal?
+   (lex '(lambda (y) ((lambda (x) (x y)) (lambda (c) (lambda (d) (y c))))) '()) 
+   '(lambda ((lambda ((var 0) (var 1))) (lambda (lambda ((var 2) (var 1)))))))
+  (check-equal?
+   (lex '(lambda (a)
+           (lambda (b)
+             (lambda (c)
+               (lambda (a)
+                 (lambda (b)
+                   (lambda (d)
+                     (lambda (a)
+                       (lambda (e)
+                         (((((a b) c) d) e) a))))))))) '())
+   '(lambda
+      (lambda
+        (lambda
+          (lambda
+            (lambda
+              (lambda
+                (lambda
+                  (lambda
+                    ((((((var 1) (var 3)) (var 5)) (var 2)) (var 0)) (var 1)))))))))))
+  (check-equal?
+   (lex '(lambda (a)
+           (lambda (b)
+             (lambda (c)
+               (lambda (w)
+                 (lambda (x)
+                   (lambda (y)
+                     ((lambda (a)
+                        (lambda (b)
+                          (lambda (c)
+                            (((((a b) c) w) x) y))))
+                      (lambda (w)
+                        (lambda (x)
+                          (lambda (y)
+                            (((((a b) c) w) x) y))))))))))) '())
+   '(lambda 
+      (lambda 
+        (lambda 
+          (lambda 
+            (lambda 
+              (lambda 
+                ((lambda
+                   (lambda
+                     (lambda
+                       ((((((var 2) (var 1)) (var 0)) (var 5)) (var 4)) (var 3)))))
+                 (lambda
+                   (lambda
+                     (lambda
+                       ((((((var 8) (var 7)) (var 6)) (var 2)) (var 1)) (var 0)))))))))))))
 
 
 #| 
@@ -96,12 +218,12 @@ The second part of this week's assignment is to create an
 interpreter that uses dynamic scope.
 
 So far, we have implemented our interpreters so that, if there are
-variables that occur free in an a procedure, they take their values
-from the environment in which the lambda expression is defined. We
-accomplish this by creating a closure for each procedure we see,
-and we save the environment in the closure. We call this technique
-static binding of variables, or static scope. Lexical scope is a
-kind of static scope.
+variables that occur free in a procedure, they take their values from
+the environment in which the lambda expression is defined. We
+accomplish this by creating a closure for each procedure we see, and
+we save the environment in the closure. We call this technique static
+binding of variables, or static scope. Lexical scope is a kind of
+static scope.
 
 Alternatively, we could implement our interpreters such that any
 variables that occur free in the body of a procedure get their
@@ -136,15 +258,15 @@ called, so the entire expression would evaluate to 5.
 #| 
 
 4. Define value-of-dynamic, an interpreter that implements dynamic
-scope. You should be able to share use your environment helpers from a
-previous assignment, but you should not implement an abstraction for
-closures in this interpreter. This will largely correspond to the
-dynamically-scoped interpreter we wrote in class that passes an
-additional parameter, "env^". In your implementation, you should
-shadow the name of the existing env. You'll find then, that when you
-go to evaluate an application, there's only one environment in which
-you can evaluate the body. This is a pretty simple change. To liven
-things up a little (and also to allow us a more interesting test
+scope. You should be able to share use your environment helpers from
+the first part of this assignment, but you should not implement an
+abstraction for closures in this interpreter. This will largely
+correspond to the dynamically-scoped interpreter we wrote in class
+that passes an additional parameter, "env^". In your implementation,
+you should shadow the name of the existing env. You'll find then, that
+when you go to evaluate an application, there's only one environment
+in which you can evaluate the body. This is a pretty simple change. To
+liven things up a little (and also to allow us a more interesting test
 case), this interpreter should also implement let, if, *, sub1, null?,
 zero?, cons, car, cdr, and quote. When evaluating the expression (cons
 1 (cons 2 '())) value-of-dynamic should return (1 2). Now quote is a
@@ -153,7 +275,6 @@ bit of a tricky beast. So here's the quote line for the interpreter.
 [(quote ,v) v]
 
 |# 
-
 
 
 
@@ -289,12 +410,14 @@ sweet, like our functional apply-closure.
 
 #| 
 
-6. In value–of-scopes, the values of our lambda expressions are
-themselves transparent. The data are not buried behind #procedure or
-some representation of a closure.
+6.
 
-Another way to have transparent closures without changing the
-program's semantics is to instead use direct substitution and treating
+We have implemented all our interpreters as accumulator-passing
+functions. Whether we use data structures or functions the environment
+is accumulating the meanings of bound variables.
+
+What is the direct "natural recursion" style of implementation of such
+a function? One answer is to instead use direct substitution and treat
 evaluation as a set of program rewrite rules
 
 For example:
