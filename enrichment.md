@@ -4,6 +4,14 @@ layout: single
 classes: wide
 ---
 
+### Ancillary/Supplementary Videos 
+
+ - [Micinski on cons/improper lists/diagrams](https://www.youtube.com/watch?v=7NA9HZdlR0g)
+
+
+### Enrichment 
+
+
 - [More on the Ackermann Function + History]({{ site.baseurl }}/assets/code/ack-etc.rkt)
 - [The first recursive but not primitive-recursive function](http://www.sciencedirect.com/science/article/pii/0315086079900247])
 
@@ -38,6 +46,7 @@ classes: wide
 - [Bohm-Berarducci encoding--an extension of Church encoding](http://okmij.org/ftp/tagless-final/course/Boehm-Berarducci.html)
 
 
+- [An agda based introduction to PL](https://plfa.github.io/GettingStarted/)
 
 
 - [A Profile of Mathematical Logic](https://store.doverpublications.com/0486434753.html) (A fun, quick-ish read on the story of modern logic)

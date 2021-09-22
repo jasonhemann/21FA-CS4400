@@ -1,54 +1,50 @@
 ---
-title: (Lexical vs) Dynamic Scope
-date: 2021-02-17
+title: Equational reasoning and higher order functions
+date: 2021-10-04
 ---
 
 
-# Questions
+# Arithmetic examples.
 
--   Homework - coming due Wednesday.
--   I deputize you to explain and to help others.
 
-# History: The bad days
+## `plus`
 
-# Dynamic Scope
+## `times`
 
-## How we might have (mis-)implemented our interpreter
+## `expt` 
+
+## Generalizing 
+
+### This is not news. 
+
+  - Wilhelm Ackermann
+  - Gabriel Sudan
 
 ```racket
-#lang racket
-
-(define (apply-env env y)
-  (env y))
-
-(define (extend-env x a env)
-  (λ (y) (if (eqv? x y) a (apply-env env y))))
-
-(define (valof exp env)
-  (match exp
-    [`(* ,n1 ,n2) (* (valof n1 env) (valof n2 env))]
-    [`(sub1 ,n1) (sub1 (valof n1 env))]
-    [`(zero? ,n1) (zero? (valof n1 env))]
-    [`,y #:when (symbol? y) (env y)]
-    [`,n #:when (number? n) n]
-    [`(if ,n1 ,n2 ,n3) (if (valof n1 env) (valof n2 env) (valof n3 env))]
-    [`(let ([,x ,e]) ,body) (let ([a (valof e env)])
-			      (valof body (extend-env x a env)))]
-    [`(λ (,x) ,body) `(lambda (,x) ,body)]
-    [`(,rator ,rand) (match-let ([`(lambda (,x) ,body) (valof rator env)]
-				 [a (valof rand env)])
-		       (valof body (extend-env x a env)))]))
-
-(define (empty-env)
-  (λ (y) 
-    (error 'empty-env "unbound identifier ~s\n" y)))
+(define (phi p m n)
+  (cond
+    [(zero? p) (+ m n)]
+    [(and (zero? n) (zero? (sub1 p))) 0]
+    [(and (zero? n) (zero? (sub1 (sub1 p)))) 1]
+    [(zero? n) m]
+    [else (phi (sub1 p) m (phi p m (sub1 n)))]))
 ```
 
-## What happens as a consequence?
+> After Ackermann's publication of his function (which had three
+> nonnegative integer arguments), many authors modified it to suit
+> various purposes, so that today "the Ackermann function" may refer to
+> any of numerous variants of the original function. One common version,
+> the two-argument Ackermann–Péter function, is defined as follows for
+> nonnegative integers m and n:
+>
+> -- wiki
 
-## Syntax vs. Semantics
 
-# Examples
-
-# Is this a real thing? (sitting example)
+```racket
+(define (ack-peter m n)
+  (cond
+    [(zero? m) (add1 n)]
+    [(zero? n) (ack-peter (sub1 m) 1)]
+    [else (ack-peter (sub1 m) (ack-peter m (sub1 n)))]))
+```
 

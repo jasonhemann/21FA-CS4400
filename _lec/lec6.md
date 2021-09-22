@@ -1,6 +1,6 @@
 ---
 title: Universality of lambda calculus, alpha, beta, and eta.
-date: 2021-02-08
+date: 2021-09-27
 ---
 
 # Questions 

@@ -1,132 +1,36 @@
 ---
-title: Free, bound, and lexical address
-date: 2021-02-01
+title: value-of an interpreter for lambda-calculus expressions
+date: 2021-09-20
 ---
 
-# Questions 
-  + Brief Homework questions 
+# Questions
 
-# `lambda` calculus expressions as datatype.
+-   Homework coming due soon. Yeah?
+-   I had set autograder doing some other point scales. Please notice adjusted.
+-   Great Piazza questions! Keep up the good and awesomeness!
+-   Debugging help. Stub out functions to get our outputs
 
-```
-        x, y ∈ Vars
-   b, e2, e2 ∈ E ::= y | (lambda (x) b) | (e₁ e₂)
-```
+# Review
 
-# `match` expressions over these 
-  
-  You can borrow this and keep it in a file somewhere. A large
-  majority of our programs will start with something very
-  similar. Almost all of the second portion of this assignment.
-  
-```racket
-(define (_ e)
-  (match e
-    [`,y #:when (symbol? y)  ]
-    [`(lambda (,x) ,body)   ]
-    [`(,rator ,rand)      ]))
-```
+-   `match`
+-   our three lines
 
-## Example
+# The interpreter
 
-```racket
-  (define (expression-depth e)
-   (match e
-     [`,y #:when (symbol? y) 0]
-     [`(lambda (,x) ,body) (add1 (expression-depth body))]
-     [`(,rator ,rand) (add1 (max (expression-depth rator) (expression-depth rand)))]))
-```
+This is today\'s big idea. One of the questions we can ask about these
+`lambda`-calculus expressions is: what is the *value*? And its the same
+pattern as writing any other program over `lambda`-calculus expressions.
 
-## Try it out
+We will add some forms beyond just our 3 lines, but we don\'t *have* to.
+And you could add more if you wanted, too!
 
-```racket
- (define (_ e)
-(match e
-  [`,y #:when (symbol? y)                       ]
+## We can add some lines for some other primitives 
 
-  [`(lambda (,x) ,body)                        ]
+- `numbers`
+- `if`
+- `add1`
+- `*`
 
-  [`(,rator ,rand)                           ])))
-```
+Note how these aren't *exactly* completely independent, but I did it
+b/c I want you to be able to run your programs in Racket
 
-# Variable occurrences
-
- For us, to say a variable *occurs* is a technical term. An
- *occurrence* of a variable is something we can reach via recursion.
-
- A variable *occurs* in an expression when we can reach that variable
- by structural recursion on that expression.
-
-    |------+--------+----------+--------------------------+---------|
-    | Does |        | occur in |                          | ? (Y/N) |
-    |------+--------+----------+--------------------------+---------|
-    |      | z      |          | (lambda (z) x)           |         |
-    |      | x      |          | x                        |         |
-    |      | y      |          | (lambda (x) y)           |         |
-    |      | z      |          | (lambda (z) (x y)        |         |
-    |      | lambda |          | (lambda (lambda) lambda) |         |
-    |------+--------+----------+--------------------------+---------|
-
-#  Free variable occurrences, bound variable occurrences 
-
-  A variable *occurs* *free* in an expression when an occurrence of
-  that variable in the expression is outside the *scope* of any
-  declaration of that variable.
-
-  A variable *occurs* *bound* in an expression when an occurrence of
-  that variable in the expression is inside the *scope* of a
-  declaration of that variable.
-
-    |------+---+-------+-------+----+--------------------+---------|
-    | Does |   | occur |       | in |                    | ? (Y/N) |
-    |------+---+-------+-------+----+--------------------+---------|
-    |      |   |       |       |    |                    |         |
-    |      | x |       | free  |    | x                  |         |
-    |      | y |       | free  |    | x                  |         |
-    |      | x |       | bound |    | x                  |         |
-    |      | z |       | bound |    | (lambda (z) x)     |         |
-    |      | y |       | bound |    | (lambda (x) y)     |         |
-    |      | z |       | bound |    | (lambda (z) x)     |         |
-    |      | y |       | bound |    | (lambda (y) y)     |         |
-    |      | x |       | free  |    | ((lambda (x) x) x) |         |
-    |      | x |       | bound |    | ((lambda (x) x) x) |         |
-    |      | z |       | free  |    | ((lambda (x) x) x) |         |
-    |      | z |       | bound |    | ((lambda (x) x) x) |         |
-    |------+---+-------+-------+----+--------------------+---------|
-
-# Lexical address
-
-  It may surprise you to learn that we don't really need variable
-  names. There is a sense in which
-
-```racket
-    (lambda (x)
-      (lambda (y)
-	x))
-```
-
-  and 
-
-```racket
-    (lambda (p)
-      (lambda (q)
-	p))
-```
-  
-  are the same, but different from the program. 
-  
-```racket
-    (lambda (z)
-      (lambda (w)
-	w))
-```
-  
-  What is that sense? How do we describe it? 
-  
-  We call them *α-equivalent*, and when we write these expressions
-  using numbers rather than variable names, that they have their
-  corresponding variable occurrences have the same *lexical*
-  *addresses* (or *DeBruijn* *indices*)
-  
-  
-  

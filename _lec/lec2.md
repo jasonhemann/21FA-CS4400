@@ -1,83 +1,141 @@
 ---
-title: Naturally Recursive Functions
-date: 2021-01-25
+title: letrec, quasiquote, and match
+date: 2021-09-13
 ---
-# All the Racket you need to know x2
+
+# Objectives 
+
+  1. Recapitulate our notions of natural recursion
+  1. (Re)learn some basic Racket tools we'll need for this class
+
+# HW Notes
+
+## Truthiness
+## Help functions, etc, accumulator parameters. 
+
+# All the Racket you need to know II
 
 ## Again, it's important to write this *style* of programs
 
-### `length`
+### `count`
 
-
-### `count8`
+A function we wrote using the style of natural recursion.
 
 ```racket
-(define (count8 ls)
+(define (count x ls)
   (cond
-    ((null? ls) 0)
-    ((eqv? (car ls) 8) (add1 (count8 (cdr ls))))
-    (else (count8 (cdr ls)))))
+    ((empty? ls) 0)
+    ((eqv? x (car ls)) (add1 (count x (cdr ls))))
+    (else (count x (cdr ls)))))
 ```
 
-### `count8*`
+### `count*`
 
 ```racket
-(define (count8* ls)
+(define (count* x ls)
   (cond
-    ((null? ls) 0)
+    ((empty? ls) 0)
     ;; this is our test for listitude 
     ;; we have a list, and it's car is a list
-    ((pair? (car ls)) (+ (count8* (car ls)) (count8* (cdr ls))))
-    ((eqv? (car ls) 8) (add1 (count8* (cdr ls))))
-    (else (count8* (cdr ls)))))
+    ((cons? (car ls)) (+ (count* x (car ls)) (count* x (cdr ls))))
+    ((eqv? (car ls) 8) (add1 (count* (cdr ls))))
+    (else (count* x (cdr ls)))))
 ```
 
-	```racket
-(count8* '(4 (8 (5 (((8)) 7))) (3 8)))
+```racket
+> (count* 8 '(4 (8 (5 (((8)) 7))) (3 8)))
 3
 ```
 
-# Arithmetic examples.
+#  let vs letrec 
 
+## let 
 
-## `plus`
-
-## `times`
-
-## `expt` 
-
-## Generalizing 
-
-### This is not news. 
-
-  - Wilhelm Ackermann
-  - Gabriel Sudan
+It can `let` us avoid recomputing expressions
 
 ```racket
-(define (phi p m n)
-  (cond
-    [(zero? p) (+ m n)]
-    [(and (zero? n) (zero? (sub1 p))) 0]
-    [(and (zero? n) (zero? (sub1 (sub1 p)))) 1]
-    [(zero? n) m]
-    [else (phi (sub1 p) m (phi p m (sub1 n)))]))
+  (+ (f 50) (f 50) (f 50))
+
+  ;; a better way is:
+
+  (let ((x (f 50)))
+    (+ x x x))
 ```
 
-> After Ackermann's publication of his function (which had three
-> nonnegative integer arguments), many authors modified it to suit
-> various purposes, so that today "the Ackermann function" may refer to
-> any of numerous variants of the original function. One common version,
-> the two-argument Ackermann–Péter function, is defined as follows for
-> nonnegative integers m and n:
+### Why do you think these two are the same?
+
+```racket
+  (let ((x e))
+    b)
+
+  ;; is equivalent to
+
+  ((lambda (x) b) e)
+```
+
+```racket
+> (let ((! (lambda (n)
+      (if (zero? n) 
+          1
+          (* n (! (sub1 n)))))))
+    (! 5))
+
+ERROR: unbound identifier '!'
+> 
+```
+   
+## `letrec` 
+
+For our purposes, for constructing anonymous recursive or anonymous mutually recursive functions.
+
+### "anonymous recursion"
+
+```racket
+> (letrec 
+    ((! (lambda (n)
+          (if (zero? n) 
+              1
+             (* n (! (sub1 n)))))))
+    (! 5))
+120
 >
-> -- wiki
+```
 
+### anonymous *mutual* recursion 
 
 ```racket
-(define (ack-peter m n)
-  (cond
-    [(zero? m) (add1 n)]
-    [(zero? n) (ack-peter (sub1 m) 1)]
-    [else (ack-peter (sub1 m) (ack-peter m (sub1 n)))]))
+> (letrec 
+    ((e? (lambda (n)
+           (if (zero? n) 
+               #t
+        	   (o? (sub1 n)))))
+     (o? (lambda (n)
+           (if (zero? n) 
+               #f
+               (e? (sub1 n))))))
+   (e? 5))
+#f
 ```
+
+
+# Pattern-matching and `match`
+
+## Why pattern matching
+   - pay attention! you won't get this anywhere else.
+   - often unfriendly to use `car` and `cdr`; ugly to write, ugly to read 
+   - Wonderful to explicitly match against cases in your data definitions. 
+   - You will see this in [your favorite language](https://www.python.org/dev/peps/pep-0636/) soon!
+   - `cond`s same if-then-else structure, but uses the "shape" of an expression instead.
+
+
+### `sum-tree` 
+
+When you /define/ the datatype, you can /match/ against it's pieces.
+shape-wise comparison
+
+# quasiquote and unquote
+
+  `(list 'a 'thing 'that 'is 'built 'with 'all 'but (- 5 4) 'value)`
+
+
 

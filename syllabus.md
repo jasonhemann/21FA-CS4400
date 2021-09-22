@@ -123,7 +123,13 @@ lecture. These act as a forcing function, encouraging attention to
 lectures and/or the ancillary readings and to alert me to students'
 difficulties. Sometimes we take these for completion, others for
 accuracy. These lecture quizzes belongs under your participation
-grade.
+grade. To account for illnesses, other commitments that come up, and
+all the other vagaries of life, I'll drop 5/25 of these quizzes for
+you all. I don't know that I'd be comfortable dropping 1/5 of them
+under normal circumstances, but at least in the current situation that
+seems like a reasonable precaution. If you think you're sick, please
+do get yourself checked and be safe.
+
 
 ## Homework
 
@@ -185,6 +191,14 @@ problems. These are not required and do not impact your homework
 grade--they are there for your fun and excitement. Often, these
 problems explore interesting topics we will not have get to in class,
 but we would be remiss in skipping them entirely.
+
+Homeworks sets will almost always contain some brainteaster questions.
+These are merely optional for those who want something extra to play
+with. Often these extra problems show something interesting that we
+haven't had the time to talk about in class. Usually there'll be some
+dessert problems as well. These are also optional, and vary from
+suuuper tricky to things we haven't yet solved to our satisfaction.
+
 
 ### Exams 
 
