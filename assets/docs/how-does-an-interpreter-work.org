@@ -256,4 +256,7 @@ When we finally go and look up ~i~ at the very last step, we check
 that it's not j, we check that it's not j (Again! Twice! We didn't
 claim this was the most efficient implementation, just that it
 describes mathematically the behavior) and then finally we check if 'i
-is 'i. Since it is, we return 
+is 'i. Since it is, we return 7 as the answer for the whole
+expression. Remember the result of the first application was waiting
+on the result of the second application was waiting on the result of
+the third application was waiting on the value of i.
