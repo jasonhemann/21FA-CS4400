@@ -255,7 +255,7 @@ moves quickly, and very high enlightenment/text ratio. That's my sales
 pitch.
 
 - insertR-fr
-- filter
+- filter-fr
 - map-fr
 - append-fr
 - reverse-fr

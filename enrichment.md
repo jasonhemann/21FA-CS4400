@@ -46,6 +46,7 @@ classes: wide
 - [Bohm-Berarducci encoding--an extension of Church encoding](http://okmij.org/ftp/tagless-final/course/Boehm-Berarducci.html)
 
 
+- [An agda based introduction to PL](https://plfa.github.io/GettingStarted/)
 
 
 - [A Profile of Mathematical Logic](https://store.doverpublications.com/0486434753.html) (A fun, quick-ish read on the story of modern logic)
