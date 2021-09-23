@@ -249,12 +249,12 @@ attend each lecture, and take vigorous notes.* We will often provide
 directly the answers to homework problems in lecture, and this course
 is significantly more difficult for the student who misses one or more
 lectures. There are no substitutes for participating in in-class
-activities. We will often distribute electronic transcripts of the
-in-class code and make lecture videos available, but this is no
-substitute for careful notes and understanding its development. I will
-not be taking attendance except for lecture content quizzes. Regular
-class attendance is a student's obligation, as is responsibility for
-all the content of class meetings, including tests.
+activities. We will sometimes distribute electronic transcripts of the
+in-class code, but this is no substitute for careful notes and
+understanding its development. I will not be taking attendance except
+for lecture content quizzes. Regular class attendance is a student's
+obligation, as is responsibility for all the content of class
+meetings, including tests.
 
 You should plan to have with you tools to take vigorous notes. Pencil
 and paper, or some electronic tablet version of the aforementioned,
