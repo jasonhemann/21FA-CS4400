@@ -218,25 +218,25 @@ The second part of this week's assignment is to create an
 interpreter that uses dynamic scope.
 
 So far, we have implemented our interpreters so that, if there are
-variables that occur free in a procedure, they take their values from
+free variables references in a procedure, they take their values from
 the environment in which the lambda expression is defined. We
 accomplish this by creating a closure for each procedure we see, and
 we save the environment in the closure. We call this technique static
 binding of variables, or static scope. Lexical scope is a kind of
 static scope.
 
-Alternatively, we could implement our interpreters such that any
-variables that occur free in the body of a procedure get their
-values from the environment from which the procedure is called,
-rather than from the environment in which the procedure is defined.
+Alternatively, we could implement our interpreters such that any free
+variable references in the body of a procedure get their values from
+the environment from which the procedure is called, rather than from
+the environment in which the procedure is defined.
 
 For example, consider what would happen if we were to evaluate the
 following expression in an interpreter that used lexical scope:
 
 (let ([x 2])
- (let ([f (lambda (e) x)])
-   (let ([x 5])
-     (f 0))))
+  (let ([f (lambda (e) x)])
+    (let ([x 5])
+      (f 0))))
 
 Our lexical interpreter would add x to the environment with a
 value of 2. For f, it would create a closure that contained the
@@ -414,7 +414,7 @@ sweet, like our functional apply-closure.
 
 We have implemented all our interpreters as accumulator-passing
 functions. Whether we use data structures or functions the environment
-is accumulating the meanings of bound variables.
+is accumulating the meanings of the declared variables.
 
 What is the direct "natural recursion" style of implementation of such
 a function? One answer is to instead use direct substitution and treat
@@ -466,8 +466,8 @@ define e1[e2/x] as:
 (lambda (x1) e1)[e2/x2] = (lambda (x3) e1[x3/x1][e2/x2])
                           if x1 is not x2,
                              x2 is not x3,
-                             x3 is not a free variable in (lambda (x1) e1)
-                             and x3 is not a free variable in e2
+                             x3 is not a free variable reference in (lambda (x1) e1)
+                             and x3 is not a free variable reference in e2
           (e1 e2)[e3/x] = (e1[e3/x] e2[e3/x])
                  n[e/x] = n if n is a constant
     (if e1 e2 e3)[e4/x] = (if e1[e4/x] e2[e4/x] e3[e4/x])
