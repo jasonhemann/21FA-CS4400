@@ -71,7 +71,7 @@
 
 |# 
 
-(check-equal?
+(test-equal?
  "A nearly-sufficient test-case of your program's functionality"
  (value-of
   '(((lambda (f)
@@ -144,15 +144,15 @@ examples.
 
 |# 
 
-(check-equal?
+(test-equal?
  "Ppa"
  (fo-eulav '(5 (x (x) adbmal)) (lambda (y) (error 'fo-eulav "unbound variable ~s" y)))
  5) 
-(check-equal?
+(test-equal?
  "Stnemugra sa Snoitcnuf"
  (fo-eulav '(((x 1bus) (x) adbmal) ((5 f) (f) adbmal)) (lambda (y) (error 'fo-eulav "unbound variable ~s" y)))
  4) 
-(check-equal?
+(test-equal?
  "Tcaf"
  (fo-eulav
   '(5  
@@ -188,7 +188,7 @@ examples.
 (define (empty-env-lex)
   '())
 
-(check-equal?
+(test-equal?
  "This test shows we're using a data-structure representation of environments."
  (value-of-lex '((lambda (var 0)) (const 5)) (empty-env-lex))
  5)
@@ -225,12 +225,12 @@ two arguments, and set! mutates variables.
 (define c0 (lambda (s) (lambda (z) z)))
 (define c5 (lambda (s) (lambda (z) (s (s (s (s (s z))))))))
 
-(check-equal?
+(test-equal?
  "Church 5 acts like 5"
  ((c5 add1) 0)
  5)
 
-(check-equal?
+(test-equal?
  "Church 0 acts like 0"
  ((c0 add1) 0)
  0)
@@ -248,7 +248,7 @@ two arguments, and set! mutates variables.
 
 (define c10 ((c+ c5) c5))
 
-(check-equal?
+(test-equal?
  "Church addition acts like addition on Church numerals"
  ((c10 add1) 0)
  10)
