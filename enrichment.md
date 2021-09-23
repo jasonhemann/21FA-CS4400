@@ -69,3 +69,7 @@ Additional online textbooks with relevant sections/explanations.
 - [PPL Notes](https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
 - Krishnamurthi's [PLAI](http://cs.brown.edu/courses/cs173/2012/book/)
 - [Barzilay's PL class notes](https://pl.barzilay.org/lec98)
+
+
+"All language designers are arrogant.  Goes with the territory..." -- Larry Wall
+
