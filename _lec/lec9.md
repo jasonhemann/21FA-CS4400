@@ -1,54 +1,71 @@
 ---
-title: (Lexical vs) Dynamic Scope
-date: 2021-02-17
+author: Jason Hemann
+title: Parameter Passing
+date: 2021-10-06
 ---
-
 
 # Questions
 
--   Homework - coming due Wednesday.
--   I deputize you to explain and to help others.
+-   Homework questions?
+-   Anyone else gotten started on the one from yesterday?
+-   Look for test code
 
-# History: The bad days
+# Parameter Passing Conventions
 
-# Dynamic Scope
+Today we implement 4, **4** interpreters, which exhibit different
+parameter-passing conventions.
 
-## How we might have (mis-)implemented our interpreter
+# Preludes: Boxes
 
-```racket
-#lang racket
-
-(define (apply-env env y)
-  (env y))
-
-(define (extend-env x a env)
-  (λ (y) (if (eqv? x y) a (apply-env env y))))
-
-(define (valof exp env)
-  (match exp
-    [`(* ,n1 ,n2) (* (valof n1 env) (valof n2 env))]
-    [`(sub1 ,n1) (sub1 (valof n1 env))]
-    [`(zero? ,n1) (zero? (valof n1 env))]
-    [`,y #:when (symbol? y) (env y)]
-    [`,n #:when (number? n) n]
-    [`(if ,n1 ,n2 ,n3) (if (valof n1 env) (valof n2 env) (valof n3 env))]
-    [`(let ([,x ,e]) ,body) (let ([a (valof e env)])
-			      (valof body (extend-env x a env)))]
-    [`(λ (,x) ,body) `(lambda (,x) ,body)]
-    [`(,rator ,rand) (match-let ([`(lambda (,x) ,body) (valof rator env)]
-				 [a (valof rand env)])
-		       (valof body (extend-env x a env)))]))
-
-(define (empty-env)
-  (λ (y) 
-    (error 'empty-env "unbound identifier ~s\n" y)))
+``` {racket}
+> (box 'cat)
+#&cat
+> (define b (box 'cat))
+> b
+#&cat
+> (unbox b)
+cat
+> b
+#&cat
+> (set-box! b 'dog)
+> b
+#&dog
+> 
 ```
 
-## What happens as a consequence?
+> All problems in computer science can be solved by another level of
+> indirection. -- David Wheeler
 
-## Syntax vs. Semantics
+# Call-by-value interpreter, revisited
 
-# Examples
+We will at first revisit this interpreter, and a short-circuit line.
+This is for a derivation, not initially motivated in and of itself. But
+you could *imagine* wanting this, if you know this situation happens
+often.
 
-# Is this a real thing? (sitting example)
+# Call-by-reference interpreter
 
+Notice!
+
+``` {racket}
+> (define b (box 'cat))
+> (define c (box (unbox b)))
+> (eqv? b c)
+#f
+```
+
+# Call-by-name interpreter
+
+# Call-by-need interpreter
+
+  ----------------- -------------------- -----------------------
+                    Strict evalutation   Non-strict evaluation
+  Passes new box    CBV (the standard)   
+  Passes same box   CBReference          CBName
+  ----------------- -------------------- -----------------------
+
+And our call-by-need interpreter is a variation on the CBName one, that
+*uses* the side-effect for efficiency.
+
+See both your own lecture notes, and also our linked PDF document
+deriving these four interpreters to refresh and recapitulate.
