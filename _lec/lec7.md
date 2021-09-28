@@ -32,12 +32,11 @@ date: 2021-09-29
     [`,y #:when (symbol? y) (env y)]
     [`,n #:when (number? n) n]
     [`(if ,n1 ,n2 ,n3) (if (valof n1 env) (valof n2 env) (valof n3 env))]
-    [`(let ([,x ,e]) ,body) (let ([a (valof e env)])
-			      (valof body (extend-env x a env)))]
-    [`(λ (,x) ,body) `(lambda (,x) ,body)]
-    [`(,rator ,rand) (match-let ([`(lambda (,x) ,body) (valof rator env)]
-				 [a (valof rand env)])
-		       (valof body (extend-env x a env)))]))
+    [`(let ([,x ,e]) ,body) 
+	  (let ([a (valof e env)])
+        (valof body (extend-env x a env)))]
+    [`(λ (,x) ,body) (lambda (a env^) (valof body (extend-env x a env^)))]
+    [`(,rator ,rand) ((valof rator env) (valof rand env) env)]))
 
 (define (empty-env)
   (λ (y) 
@@ -50,5 +49,5 @@ date: 2021-09-29
 
 # Examples
 
-# Is this a real thing? (sitting example)
+# Is this a real thing? (Lurking example)
 
