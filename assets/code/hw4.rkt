@@ -182,18 +182,19 @@ numbers from lexical addresses, you should transform a number n into
 
 3. Create a version of your interpreter from the first part of this
 assignment that is representation-independent with respect to closures
-and uses a higher-order function representation. Name your two new
-closure helpers apply-closure-fn and make-closure-fn.
+and uses a higher-order function representation named value-of-fn.
+Name your two new closure helpers apply-closure-fn and
+make-closure-fn.
 
 |# 
 
 
 #| 
 
-4. Create a version of this interpreter that is
-representation-independent with respect to closures and uses a data
-structure representation. Name your two new closure helpers
-apply-closure-ds and make-closure-ds.
+4. Create a version of this interpreter named value-of-ds that is
+representation-independent with respect to closures and uses a
+tagged-list data structure representation. Name your two new closure
+helpers apply-closure-ds and make-closure-ds.
 
 Other than the cosmetic change of -fn to -ds, you shouldn't have to
 change the implementations of valof. This is once again a good thing!
