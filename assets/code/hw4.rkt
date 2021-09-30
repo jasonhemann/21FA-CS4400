@@ -502,6 +502,10 @@ doing so. Also write tests for your code.
 
 |#
 
+#| 
+
+;; Uncomment and complete 
+
 (define (subst e^ x e)
   (match e
     [`,n #:when (number? n) n]
@@ -581,3 +585,5 @@ doing so. Also write tests for your code.
      (let ([e1^ (norm e1)])
        (norm `(,e1^ ,e2)))]
     [else (error 'norm "invalid expression ~s" x)]))
+
+|#
