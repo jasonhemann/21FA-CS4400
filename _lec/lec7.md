@@ -11,13 +11,14 @@ date: 2021-09-29
 
 # Y Combinator
 
-```
+```racket
 (lambda (x) 
   (lambda (y)
     (lambda (z) 
 	  ((((x y) (z w)) ((a b) (p q)))))))
 ```	  
 
+```racket
 ;; K (lambda (x) (lambda (y) x))
 ;; S (lambda (x) (lambda (y) (lambda (z) ((x z) (y z)))))
 
@@ -117,7 +118,7 @@ date: 2021-09-29
 (lambda (f) 
   ((lambda (x) (f (λ (y) ((x x) y))))
    (lambda (x) (f (λ (y) ((x x) y))))))
-
+```
 
 # History: The bad days
 
@@ -153,16 +154,33 @@ date: 2021-09-29
     (error 'empty-env "unbound identifier ~s\n" y)))
 ```
 
+
 ## What happens as a consequence?
 
+  1. Programmers are no longer free to choose their own variable names.
 
-### `my` vs. `local` in Perl
+  2. A programmer can no longer, in general, determine the value of a
+     given expression without evaluating the whole program. 
 
+  2. Programmers can no longer safely focus on understanding a small
+     part of the program in isolation. 
+	 
+  3. Implementations suffer, as environment lookup becomes more
+     expensive and we loose much of the "cactus stack" discipline of
+     our lexically-scoped environments.
+	 
+	 
 
 ## Syntax vs. Semantics
+
+We have the same syntax, but different semantics. More pernicious yet,
+the two behaviors are often the same for most programs. Eek! The times
+when they don't behave surely violate the principle of least surprise.
 
 # Examples
 
 # Is this a real thing? (Lurking example)
 
+Emacs lisp
 
+### `my` vs. `local` in Perl
