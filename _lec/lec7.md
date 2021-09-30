@@ -11,6 +11,10 @@ date: 2021-09-29
 
 # Y Combinator
 
+ Once again, if this was somewhat opaque to you, I highly recommend
+ you read Vanier's blog post (linked on Enrichment) to better
+ understand what's going on.
+
 ```racket
 (lambda (x) 
   (lambda (y)
