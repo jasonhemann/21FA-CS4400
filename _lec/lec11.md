@@ -1,5 +1,4 @@
 ---
-author: Jason Hemann
 title: Continuation-passing style
 date: 2021-10-20
 ---

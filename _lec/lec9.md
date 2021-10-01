@@ -1,5 +1,4 @@
 ---
-author: Jason Hemann
 title: Parameter Passing
 date: 2021-10-06
 ---
