@@ -20,7 +20,7 @@ date: 2021-09-29
   (lambda (y)
     (lambda (z) 
 	  ((((x y) (z w)) ((a b) (p q)))))))
-```	  
+```
 
 ```racket
 ;; K (lambda (x) (lambda (y) x))
