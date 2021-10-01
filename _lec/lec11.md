@@ -6,9 +6,7 @@ date: 2021-10-20
 
 # Questions
 
-## Exams
-
-## Grades
+## Exam Grades
 
 -   Grades calculations
 -   Most grades in
@@ -40,7 +38,7 @@ date: 2021-10-20
 
 ## Example
 
-``` {racket}
+```racket
 (define !
   (lambda (n)
     (if (zero? n)
@@ -56,7 +54,7 @@ date: 2021-10-20
 
 ## You try
 
-``` {racket}
+```racket
 (define extend-env
   (lambda (x a env)
     (lambda (y)
