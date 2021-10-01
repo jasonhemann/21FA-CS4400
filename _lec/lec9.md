@@ -17,7 +17,7 @@ parameter-passing conventions.
 
 # Preludes: Boxes
 
-``` {racket}
+```racket
 > (box 'cat)
 #&cat
 > (define b (box 'cat))
@@ -47,7 +47,7 @@ often.
 
 Notice!
 
-``` {racket}
+```racket
 > (define b (box 'cat))
 > (define c (box (unbox b)))
 > (eqv? b c)
@@ -58,11 +58,13 @@ Notice!
 
 # Call-by-need interpreter
 
-  ----------------- -------------------- -----------------------
-                    Strict evalutation   Non-strict evaluation
-  Passes new box    CBV (the standard)   
-  Passes same box   CBReference          CBName
-  ----------------- -------------------- -----------------------
+
+
+|                 | Strict evaluation  | Non-strict evaluation |
+|:----------------|:-------------------|:----------------------|
+| Passes new box  | CBV (the standard) |                       |
+| Passes same box | CBReference        | CBName                |
+
 
 And our call-by-need interpreter is a variation on the CBName one, that
 *uses* the side-effect for efficiency.
