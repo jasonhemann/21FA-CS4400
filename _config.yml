@@ -37,9 +37,9 @@ name                     : "Jason Hemann"
 description              : "Hemann's Programming Languages Course"
 github                   : [metadata]
 # e.g. http://example.com
-url                      : "http://pages.github.ccs.neu.edu" 
+url                      : "http://jasonhemann.github.io" 
 # the site subpath, e.g. /blog
-baseurl                  : "/jhemann/21FA-CS4400" 
+baseurl                  : "/21FA-CS4400"
 repository               : "http://github.ccs.neu.edu/jhemann/21FA-CS4400"
 teaser                   : "/assets/images/500x300teaser.png" 
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
