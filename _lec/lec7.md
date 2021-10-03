@@ -150,7 +150,7 @@ date: 2021-09-29
     [`(let ([,x ,e]) ,body) 
 	  (let ([a (valof e env)])
         (valof body (extend-env x a env)))]
-    [`(λ (,x) ,body) (lambda (a env^) (valof body (extend-env x a env^)))]
+    [`(lambda (,x) ,body) (λ (a env^) (valof body (extend-env x a env^)))]
     [`(,rator ,rand) ((valof rator env) (valof rand env) env)]))
 
 (define (empty-env)
