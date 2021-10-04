@@ -3,6 +3,27 @@ title: Equational reasoning and higher order functions
 date: 2021-10-04
 ---
 
+# A couple of notes.
+
+## Website: Changed
+
+CCS Github is a jerkface.
+
+## Gradescope Grading Scale: Updated phrasing
+
+Now phrases should better reflect what you're seeing.
+
+## Canvas Grading Scale
+
+Now 0-9.
+
+## Racket's `match`
+
+[Cf.](https://www.python.org/dev/peps/pep-0636/ "Python match")
+
+## 
+
+
 
 # Arithmetic examples.
 
