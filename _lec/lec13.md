@@ -42,7 +42,7 @@ There\'s a trick to `cond`.
 (define value-of
   (lambda (expr env)
     (pmatch expr
-      [,c (guard (or (boolean? c) (number? c))) c]
+      [,c #:when (or (boolean? c) (number? c)) c]
       [(* ,ne1 ,ne2) (* (value-of ne1 env) (value-of ne2 env))]
       [(sub1 ,ne) (sub1 (value-of ne env))]
       [(if ,test ,conseq ,alt) (if (value-of test env)
@@ -52,7 +52,7 @@ There\'s a trick to `cond`.
                                (value-of body (lambda (y) (if (eqv? x y) a (env y)))))]
 
 
-      [,y (guard (symbol? y)) (env y)]
+      [,y #:when (symbol? y) (env y)]
       [(lambda (,x) ,body) (lambda (a) (value-of body (lambda (y) (if (eqv? x y) a (env y)))))]
       [(,rator ,rand) ((value-of rator env) (value-of rand env))])))
 ```
