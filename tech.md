@@ -54,7 +54,7 @@ type `git help everyday` and `git help tutorials` to familiarize yourself with t
 I constructed our course homepage as a Jekyll site built with Github
 Pages. Student corrections and improvements are *incredibly* welcome!
 You should submit [pull requests
-(PR)](http://github.ccs.neu.edu/jhemann/21FA-CS4400) for
+(PR)](https://github.com/jasonhemann/21FA-CS4400) for
 corrections and improvements. Every page on this website has a direct
 links to its `.md` file in this repository.
 

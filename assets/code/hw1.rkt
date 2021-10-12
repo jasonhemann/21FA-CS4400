@@ -11,7 +11,7 @@
 
 
 ;; In addition to the standard Assignment Guidelines
-;; (https://pages.github.ccs.neu.edu/jhemann/21FA-CS4400/hw/)
+;; (https://jasonhemann.github.io/21FA-CS3800/hw/)
 
 ;; You should write your solutions without creating explict help
 ;; functions. You may, however re-use your solutions to prior
