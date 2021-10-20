@@ -316,17 +316,19 @@ s
 ;; be serious, so include the following helper definitions when
 ;; testing your code.
 
+
+(define empty?-cps
+  (λ (ls k)
+    (k (empty? ls))))
+(define car-cps
+  (λ (pr k)
+    (k (car pr))))
+(define cdr-cps
+  (λ (pr k)
+    (k (cdr pr))))
+
 #| 
 
-> (define empty?-cps
-    (λ (ls k)
-      (k (empty? ls))))
-> (define car-cps
-    (λ (pr k)
-      (k (car pr))))
-> (define cdr-cps
-    (λ (pr k)
-      (k (cdr pr))))
 > (unfold-cps empty?-cps car-cps cdr-cps '(a b c d e) (empty-k))
 (e d c b a)
 
@@ -402,7 +404,7 @@ s
 (define use-of-M
   ((M (λ (n) (add1 n))) '(1 2 3 4 5)))
 
-#| Brainteasers |# 
+#| Brainteasers 5400 Only |# 
 
 ;; 16. CPS the following program, and call it strange-cps:
 
