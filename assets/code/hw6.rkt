@@ -360,8 +360,8 @@ s
   (λ (v w s)
     (cond
       [(eqv? v w) s]
-      [(symbol? v) (cons `(,x . ,v) s)]
-      [(symbol? w) (cons `(,x . ,v) s)]
+      [(symbol? v) (cons `(,v . ,w) s)]
+      [(symbol? w) (cons `(,w . ,v) s)]
       [(and (cons? v) (cons? w))
        (let ((s (unify (walk (car v) s) (walk (car w) s) s)))
          (cond
