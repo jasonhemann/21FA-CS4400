@@ -81,10 +81,10 @@
 ;; as needed. For this problem, you should use my-* as your
 ;; multiplication operation. 
 
+(define (my-* m n)
+  (* m n))
 
 #| 
-> (define (my-* m n)
-    (* m n))
 > (define (mult n*)
     (letrec
       ((m
