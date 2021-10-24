@@ -7,13 +7,17 @@ classes: wide
 ### Ancillary/Supplementary Videos 
 
  - [Micinski on cons/improper lists/diagrams](https://www.youtube.com/watch?v=7NA9HZdlR0g)
-
+ - [Continuations: the Swiss Army Knife of Flow Control](https://www.youtube.com/watch?v=Ju3KKu_mthg)
+ - [Byrd's Tutorial on the CPS Transformation](https://youtu.be/2GfFlfToBCo?t=4538)
 
 ### Enrichment 
 
 
+
 - [More on the Ackermann Function + History]({{ site.baseurl }}/assets/code/ack-etc.rkt)
 - [The first recursive but not primitive-recursive function](http://www.sciencedirect.com/science/article/pii/0315086079900247])
+
+- [Pattern matching coming to Python](https://www.python.org/dev/peps/pep-0636/)
 
 - Hutton's [Tutorial on `fold` operators](http://www.cs.nott.ac.uk/~pszgmh/fold.pdf)
 - [On Barron & Strachey's Cartesian product function](https://www.brics.dk/RS/07/14/BRICS-RS-07-14.pdf)
@@ -21,6 +25,7 @@ classes: wide
 - The [feeling you should get looking at our interpreter](https://www.youtube.com/watch?v=Ow9AtuIuMLw)
 
 - Reynold's ["Definitional Interpreters for Higher-order Programming Languages"](https://link.springer.com/content/pdf/10.1023/A:1010027404223.pdf) [(Updated Notes)](https://link.springer.com/content/pdf/10.1023/A:1010075320153.pdf)
+- [Norman on "Denotational Design"](https://www.youtube.com/watch?v=O-8TNrWkhs8) (sort of our style of writing interpreters)
 
 - Danvy & Nielsen's ["Defunctionalization at Work"](https://www.brics.dk/RS/01/23/BRICS-RS-01-23.pdf)
 - Essay: ["What does valof defunctionalize?"]({{ site.baseurl }}/assets/code/valof-defunctionalizes.rkt)
@@ -34,6 +39,7 @@ classes: wide
 - [Kleene's "Church predecessor" via a trip to the dentist](http://link.springer.com/chapter/10.1007%2FBFb0062850)
 
 - [A first-order one-pass CPS transformation](https://link.springer.com/content/pdf/10.1007/3-540-45931-6_8.pdf)
+- [Why continuations are coming to Java](https://www.youtube.com/watch?v=9vupFNsND6o)
 
 - [Lambda: the Ultimate GOTO](https://web.archive.org/web/20110718095430/http://repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-443.pdf)
 - [CONS should not cons its arguments pt II: Cheney on the MTA](https://dl.acm.org/doi/10.1145/214448.214454)
