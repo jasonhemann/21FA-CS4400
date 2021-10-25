@@ -161,7 +161,7 @@ required to do so.
 
 |#
 
-;; 4. Define and test a procedure walk-cps that is a CPSed version of
+;; 3. Define and test a procedure walk-cps that is a CPSed version of
 ;; the following walk procedure:
 
 (define walk
