@@ -38,6 +38,7 @@ classes: wide
 - [Hunting the history of Moses Schönfinkel](https://writings.stephenwolfram.com/2020/12/where-did-combinators-come-from-hunting-the-story-of-moses-schonfinkel/)
 - [Kleene's "Church predecessor" via a trip to the dentist](http://link.springer.com/chapter/10.1007%2FBFb0062850)
 
+- [Someone else's explanation of the CPS transformation](https://www.cs.bgu.ac.il/~ppl202/wiki.files/class/notebook/4.2CPS.html)
 - [A first-order one-pass CPS transformation](https://link.springer.com/content/pdf/10.1007/3-540-45931-6_8.pdf)
 - [Why continuations are coming to Java](https://www.youtube.com/watch?v=9vupFNsND6o)
 

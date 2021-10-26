@@ -1,21 +1,57 @@
 ---
 author: Jason Hemann
 title: CPSing an interpreter
-date: 2021-03-08
+date: 2021-10-25
 ---
+
+# Today topics
+
+ - Recap CPSing
+ - Complex examples
+ --- serious `cond` questions
+ --- applying anonymous lambdas 
+ - the interpreter
+ -- Tricky forms
+ --- `if`
+ --- `let` 
+ --- explicit sequencing
+
+## PITCH
+
+```
+Properly
+Implemented
+Tail
+Call 
+Handling
+```
+
 
 # Questions, so far?
 
 ## Homework
 
--   First part of your final project coming tonight.
+-   First part of your final project coming out soon.
 
-# Recap continuation-passing Style
+# Recap continuation-passing Style, and implement CPSing an interpreter. 
 
-## You try
+For a nice resource walking you through some complex examples, please
+see [the following](
+https://www.cs.bgu.ac.il/~ppl202/wiki.files/class/notebook/4.2CPS.html)
+(hat tip to a 4400 student). 
 
-``` {racket}
-(define a-particular-extend-env
+
+## Two kinds of forms: CPSing as a function definition, vs CPSing as an expression. 
+
+Why? Because `define`, basically. We aren't threading the definition of functions into one control flow.
+
+
+# Special/tricky cases
+
+# Basic examples
+
+ ``` {racket}
+(define a-particular-extended-env
   (lambda (y)
     (if (eqv? 'p y)
         12
@@ -26,15 +62,23 @@ date: 2021-03-08
     (env y)))
 ```
 
-## Special/tricky cases
+### cond
+
+There's a trick to `cond`.
+
+```racket
+(define g-the-fs 
+  (lambda (f g ls)
+    (cond
+	  ((empty? ls) '())
+	  ((f (car ls)) (cons (g (car ls)) (g-the-fs f g (cdr ls))))
+	  (else (cons (car ls) (g-the-fs f g (cdr ls)))))))
+``` 
 
 ### let
 
 A special shortcut to make `let` easier.
 
-### cond
-
-There\'s a trick to `cond`.
 
 # CPSing an interpreter {#cpsing-an-interpreter-1}
 
