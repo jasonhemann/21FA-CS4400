@@ -24,6 +24,10 @@ CPS me :-)
 
 # Recap CPSing the interpreter, + two new features. 
 
-# CPS continuations:
+## `let/cc` 
+
+## `throw` 
+
+# Defunctionalize, RI continuations:
 
 See in-class development and the notes posted online 
