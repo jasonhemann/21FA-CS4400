@@ -155,7 +155,7 @@ in value-of-cps. Use empty-env and empty-k when testing.
     removed all higher-order function representations of continuations.
 
  13 **Place your final version in a file named hw7.rkt and submit it
-    via Handins.** Make sure to include both part I and part II of the
+    via Gradescope.** Make sure to include both part I and part II of the
     assignment in your final submission as well.
 
 |# 
