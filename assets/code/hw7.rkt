@@ -167,7 +167,7 @@ in value-of-cps. Use empty-env and empty-k when testing.
         ((value-of-cps '(zero (mult (const 5) (const 5))) (empty-env) (empty-k)) #f)
         ((value-of-cps '(sub1 (const 5)) (empty-env) (empty-k)) 4)
         ((value-of-cps '(sub1 (sub1 (const 5))) (empty-env) (empty-k)) 3)
-        ((value-of-cps '(sub1 (sub1 (const 5))) (empty-env) (extend-env 3 (empty-k))) 3)
+        ((value-of-cps '(sub1 (sub1 (const 5))) (extend-env 3 (empty-env)) (empty-k)) 3)
         ((value-of-cps '(zero (sub1 (const 6))) (empty-env) (empty-k)) #f)
         ((value-of-cps '(mult (sub1 (const 5)) (const 5)) (empty-env) (empty-k)) 20)
         ((value-of-cps '(mult (const 5) (sub1 (const 5))) (empty-env) (empty-k)) 20)
