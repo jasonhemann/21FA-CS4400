@@ -192,6 +192,6 @@
 ;; order to trampolinize.
 
 ;; (check-true* equal?             
-;;   [(bi-tramp-driver 3 4) '(3 5)]
-;;   [(bi-tramp-driver 4 3) '(3 5)]
-;;   [(bi-tramp-driver 6 6) '(17 17)])
+;;   [(bi-tramp-driver 3 4) '(2 4)]
+;;   [(bi-tramp-driver 4 3) '(2 4)]
+;;   [(bi-tramp-driver 6 6) '(13 13)])
