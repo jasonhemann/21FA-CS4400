@@ -174,7 +174,7 @@
 
 ;; We can now construct global registers (for everything but f-cps, because the define is in some sense doing that for us*).
 ;; And with those registers, we'll no longer need local variables. We can instead of let*-binding local variables, we can set! global ones. 
-;; This step is still fraught with peril. If you like, you can remove each local variable one at a time. If you make mistakes, this might help limit the places that those could occur.
+;; This step is still fraught with peril. If you like, you can (usually) remove each local variable one at a time, though you may have to choose the order carefully for more complex functions. If you make mistakes, this might help limit the places that those could occur.
 ;; But we'll just get'em all at once
 (define k 'hukarz)
 (define v 'hukarz)
