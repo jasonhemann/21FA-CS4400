@@ -96,20 +96,19 @@
 
 ;; #| Problems |# 
 
-;; 1. SAOP implements a two-pointer queue data structure directly.
-;; We can instead implement a queue using two-stacks. The two-stack
-;; queue implementation is a common approach. If you're not
-;; familiar with this approach, see the PDF Okasaki-queue.pdf on the
-;; repo. We are interested in the OO design of a two-stack queue.
-;; Define and implement `queue-maker`, not by copying the
-;; implementation in the text, and certainly not by copying in a
-;; Racket implementation, but by mirroring the implementation. Your
-;; implementation should construct queues that support `empty?`,
-;; `enqueue`, `dequeue`, and `peek`. We're assessing this based on
-;; OO design; you can pass all of these tests and not have an OO
-;; design. Make sure and use two of our stacks inside each queue,
-;; and make sure to use message passing to send and receive 
-;; messages.
+;; 1. SAOP implements a two-pointer queue data structure directly. We
+;; can instead implement a queue using two-stacks. The two-stack queue
+;; implementation is a common approach. If you're not familiar with
+;; this approach, see the PDF Okasaki-queue.pdf on the repo. We are
+;; interested in the OO design of a two-stack queue. Define and
+;; implement `queue-maker`, not by copying the implementation in the
+;; text, and certainly not by copying in a Racket implementation, but
+;; by mirroring the implementation. Your implementation should
+;; construct queues that support `empty?`, `enqueue!`, `dequeue!`, and
+;; `peek`. We're assessing this based on OO design; you can pass all
+;; of these tests and not have an OO design. Make sure and use two of
+;; our stacks inside each queue, and make sure to use message passing
+;; to send and receive messages.
 
 
 
@@ -130,7 +129,6 @@
 ;; with some data on it. We can treat the DFA's current state as the
 ;; thing inside some box. I thought about doing a PDA because of the
 ;; stack but that's bothersome. We'll leave that for a future term. 
-
 
 
 (define δ
