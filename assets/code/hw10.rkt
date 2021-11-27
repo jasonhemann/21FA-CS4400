@@ -105,10 +105,11 @@
 ;; text, and certainly not by copying in a Racket implementation, but
 ;; by mirroring the implementation. Your implementation should
 ;; construct queues that support `empty?`, `enqueue!`, `dequeue!`, and
-;; `peek`. We're assessing this based on OO design; you can pass all
-;; of these tests and not have an OO design. Make sure and use two of
-;; our stacks inside each queue, and make sure to use message passing
-;; to send and receive messages.
+;; `peek`. Your dequeue! should return the dequeued value. We're
+;; assessing this based on OO design; you can pass all of these tests
+;; and not have an OO design. Make sure and use two of our stacks
+;; inside each queue, and make sure to use message passing to send and
+;; receive messages.
 
 
 
