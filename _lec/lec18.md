@@ -1,7 +1,9 @@
 ---
 author: Jason Hemann
-title: Exam Review
-date: 2021-03-29
+title: Exam Review 
+date: 2021-03-31
 ---
 
-A full class of exam review
+A full-day exam review.
+
+
