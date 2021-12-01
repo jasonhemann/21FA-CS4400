@@ -70,14 +70,15 @@ I will assign overall course grades as follows:
      | TRACE                     |          1 | 
      | Total                     |        101 |
 
-We (I) will calculate overall numeric grade according to this grading
-scheme. Your final grades will be at least as good as the standard
-calculation for As, Bs, Cs, etc. To assign final letter grades at the
-end of the term I sum and chart the numeric scores, and break
-students' grades where we see inflection points (with no students'
-grade worse than their raw calculation). This means I *cannot* give
-you a more precise estimate of your grade than what you calculate from
-the raw score.
+We (I) will calculate overall numeric grade according to the
+[Northeastern grading schema]({{ site.baseurl
+}}/assets/images/northeastern-grading-schema.jpg). Your final grades
+will be at least as good as the standard calculation for As, Bs, Cs,
+etc. To assign final letter grades at the end of the term I sum and
+chart the numeric scores, and break students' grades where we see
+inflection points (with no students' grade worse than their raw
+calculation). This means I *cannot* give you a more precise estimate
+of your grade than what you calculate from the raw score.
 
 I will base some portions of your homework and lecture quiz
 grades on completion and submission of the relevant exercises. I will
