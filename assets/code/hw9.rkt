@@ -192,7 +192,9 @@
    from your interpreter. Compile the C program with the C compiler of
    your choice. The `login` linux machines have gcc installed, and you
    can find [binaries](http://gcc.gnu.org/install/binaries.html) for many
-   different systems. Alternately, you could use an [online C
+   different systems. This should look like `gcc a9.c`. Note, if you see a
+   jmp_buf failure, this likely means you accidentally also tried to 
+   compile `a9.h`. Don't do that. Alternately, you could use an [online C
    compiler](http://tutorialspoint.com/compile_c_online.php). This should
    generate an ELF executable, probably named `a.out` unless you
    specified otherwise. Run the generated executable; if you see the
