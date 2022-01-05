@@ -4,7 +4,6 @@ title: Combinatory Logic, Abstraction, iota and jot
 date: 2021-12-06
 ---
 
-
 ## The problem with lambdas: compiling them to run on a computer.
 
 The problem with lambda expressions is compiling them to run on a
@@ -276,7 +275,8 @@ F --> F  0		[F]SK
 F --> F  1		\xy.[F](xy)
 ```
 
-Where `e` is the empty string. Every possible string of 1s and 0s is grammatical!
+
+Where `e` is the empty string. Every possible string of 1s and 0s is grammatical! {0,1}*
 
 ```
 CL      Jot
