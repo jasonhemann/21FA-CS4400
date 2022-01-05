@@ -192,8 +192,8 @@ otherwise.
 lambda-calculus expression and returns a set (represented as a list)
 of all the free variable references in that expression. Order doesn't
 matter, but the list must not contain duplicate variables. You may
-find it helpful to use the definition of unique-vars as a starting
-point.
+find it helpful to use the definition of unique-var-references as a
+starting point.
 
 |#
 
