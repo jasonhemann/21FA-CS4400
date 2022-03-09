@@ -179,9 +179,10 @@
      document for notes on these steps.
 
   9. Comment out the lines `#lang racket`,
-     `(require "parentheC.rkt")` and your invocation of main (that
-     is `(main)`) if you added it to your file. And save a copy of this
-     file named interp.pc. 
+     `(require "parentheC.rkt")`. If you added it to your file, also 
+     comment your invocation of main (that is `(main)` but leave the 
+     definition of main intact). And save a copy of this file named 
+     interp.pc. 
 
    After you have completed all of these steps, download `pc2c.rkt` to
    the same directory as this file, if you have not already done
