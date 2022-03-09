@@ -62,7 +62,7 @@
 ;; You will also need to use the following define-union for
 ;; expressions and main program:
 
-(define-union expr
+(define-union expression
   (const cexp)
   (var n)
   (if test conseq alt)
@@ -99,19 +99,19 @@
 (define main 
   (lambda ()
     (value-of-cps 
-     (expr_let 
-      (expr_lambda
-       (expr_lambda 
-        (expr_if
-         (expr_zero (expr_var 0))
-         (expr_const 1)
-         (expr_mult (expr_var 0) (expr_app (expr_app (expr_var 1) (expr_var 1)) (expr_sub1 (expr_var 0)))))))
-      (expr_mult
-       (expr_letcc
-        (expr_app
-         (expr_app (expr_var 1) (expr_var 1))
-         (expr_throw (expr_var 0) (expr_app (expr_app (expr_var 1) (expr_var 1)) (expr_const 4)))))
-       (expr_const 5)))
+     (expression_let 
+      (expression_lambda
+       (expression_lambda 
+        (expression_if
+         (expression_zero (expression_var 0))
+         (expression_const 1)
+         (expression_mult (expression_var 0) (expression_app (expression_app (expression_var 1) (expression_var 1)) (expression_sub1 (expression_var 0)))))))
+      (expression_mult
+       (expression_letcc
+        (expression_app
+         (expression_app (expression_var 1) (expression_var 1))
+         (expression_throw (expression_var 0) (expression_app (expression_app (expression_var 1) (expression_var 1)) (expression_const 4)))))
+       (expression_const 5)))
      (empty-env)
      (empty-k))))
 
