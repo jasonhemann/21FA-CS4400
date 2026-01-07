@@ -4,9 +4,12 @@
 ** Objective vs subjective grades for assignments -- how to account?
 *** Just give both?
 ** Gradescope 
-*** set-up for all assignments including a9 and macros.
-*** Move test suites into gradescope set-up.
-*** Construct daily quiz questions for content
+*** DONE set-up for all assignments including a9 and macros.
+CLOSED: [2022-05-09 Mon 06:29]
+*** DONE Move test suites into gradescope set-up.
+CLOSED: [2022-05-09 Mon 06:29]
+*** DONE Construct daily quiz questions for content
+CLOSED: [2022-05-09 Mon 06:29]
 ** Canvas
 *** Set up gradescope things to match with Canvas assignments
 *** Allocate canvas points into full grade visibility 

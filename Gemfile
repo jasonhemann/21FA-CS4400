@@ -15,11 +15,11 @@ gem "minima", "~> 2.5.1"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", "~> 219", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.15.1"
+  gem "jekyll-feed", "~> 0.17"
 #  gem 'jekyll-org', '>= 1.1.0'
 end
 
@@ -53,7 +53,6 @@ gem 'webrick'
 
 # Added because HTMLPipeline suggested these as dependencies for various Filters
 # https://github.com/jch/html-pipeline#dependencies
-gem 'nokogumbo'
 gem 'rinku'
 gem 'escape_utils'
 gem 'email_reply_parser'
@@ -62,3 +61,6 @@ gem 'commonmarker'
 gem 'sanitize'
 gem 'rouge'
 gem 'RedCloth'
+
+# Local build TLS workaround for remote_theme
+ gem "openssl", "~> 3.2.2"

@@ -128,11 +128,11 @@
      of your final product from assignment 7 into this file where
      indicated. Do not copy over the tests, however. Copy `parenthec.rkt`
      into the same directory as this file. Change the match-expression in
-     value-of-cps to instead be a union-case-expression. Consult the
-     ParentheC paper or the example from class to see how to do this. Make
-     sure to remove the backquotes and commas in the patterns of what was
-     your match expression. Ensure `main` is below your interpreter, and
-     make sure it returns 120 when you invoke it.
+     value-of-cps to instead be a union-case-expression (don't forget 
+     about main!). Consult the ParentheC paper or the example from class 
+     to see how to do this. Make sure to remove the backquotes and commas 
+     in the patterns of what was your match expression. Ensure `main` is 
+     below your interpreter, and make sure it returns 120 when you invoke it.
 
   2. Transform your closure constructor to a define-union, change the
      match in apply-closure to instead use union-case, and ensure that your
