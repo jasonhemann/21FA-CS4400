@@ -8,7 +8,7 @@ layout: single
 
 Following Univerersity and College guidance, this semester we will
 hold office hours remotely. Our TA staff will use the [Khoury Office
-Hours system](https://khouryofficehours.com/), helping students on a
+Hours system](https://www.khouryofficehours.com/), helping students on a
 first-come, first-serve basis. Jason has linked his
 [calendar](https://calendar.google.com/calendar/selfsched?sstoken=UUVKdFI5MHpUQ1FlfGRlZmF1bHR8ZTIwOGYzMTQ1NjFjNTRlNDU4NDZmODc5MmFiMjIxNGI)
 so you can

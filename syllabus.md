@@ -89,7 +89,7 @@ base the remaining portion of each on correctness.
 
 We will track the completion portions of your lab and homework grades,
 as well as your project grades, on
-[Canvas](https://canvas.northeastern.edu/). You will have an
+[Canvas](https://web.archive.org/web/20241225174038/https://canvas.northeastern.edu/). You will have an
 approximate assessment of your *current* grade status before the
 Add/Drop deadline. We cannot give you a standing completion percentage
 of the participation component of your grade because, logically, there
@@ -335,7 +335,7 @@ contain supplementary material that complements that lecture. Both are
 available at the campus bookstore.
 
   - "Scheme and the Art of Programming" (Selections made available on this website)
-  - ["Essentials of Programming Languages", 3rd edition](https://onesearch.library.northeastern.edu/permalink/f/365rt0/NEU_ALMA51224732410001401)
+  - ["Essentials of Programming Languages", 3rd edition](https://web.archive.org/web/20240726100141/https://onesearch.library.northeastern.edu/permalink/f/365rt0/NEU_ALMA51224732410001401)
 
 Neither will cover topics precisely the way we do in lecture. Their
 implementations will also differ in technical details and particulars
@@ -352,21 +352,21 @@ perhaps lecture notes from a friend.
 Students of course play an integral part in ensuring they receive the
 full benefit of their coursework. The students of 4400 are certainly
 beholden to the academic integrity policies of [Northeastern
-University](http://www.northeastern.edu/osccr/academic-integrity-policy/)
+University](http://web.archive.org/web/20210518231334/http://www.northeastern.edu/osccr/academic-integrity-policy)
 and as laid out in the [student
-handbook](https://cpb-us-w2.wpmucdn.com/sites.northeastern.edu/dist/8/569/files/2020/09/2021-22-UG-Student-Handbook.pdf),
+handbook](https://web.archive.org/web/20210810153235/https://cpb-us-w2.wpmucdn.com/sites.northeastern.edu/dist/8/569/files/2020/09/2021-22-UG-Student-Handbook.pdf),
 the [Khoury
-College](https://www.khoury.northeastern.edu/information-for-overview/current-undergrad/undergraduate-advising-academic-support/academic-policies/).
+College](https://web.archive.org/web/20240920031252/https://www.khoury.northeastern.edu/information-for-overview/current-undergrad/undergraduate-advising-academic-support/academic-policies/).
 
 ## Equity and Compliance
 
 One of our responsibilities in supporting student learning 360° is to
 help create a safe learning environment both in person and
 virtually. You should carefully consult the university's [relevant
-policies](https://www.northeastern.edu/ouec/title-ix-policy-2/), and
+policies](http://web.archive.org/web/20240319231315/https://www.northeastern.edu/ouec/title-ix-policy-2/), and
 if you have or experience any violations of the above I encourage you
 to take full advantage of the [university
-resources](https://www.northeastern.edu/ouec/resources/main-campus-resources/).
+resources](https://web.archive.org/web/20240227231642/https://www.northeastern.edu/ouec/resources/main-campus-resources/).
 
 It is also important that you know that federal regulations and
 University policy require me to promptly convey any information about
@@ -382,7 +382,7 @@ assist.
 ## Academic Accommodations 
 
 If you have accommodations from the [Disability Resource Center
-(DRC)](http://www.northeastern.edu/drc/) please submit your Professor
+(DRC)](https://web.archive.org/web/20210327072511/http://www.northeastern.edu/drc/) please submit your Professor
 Notification Letter to me by email, preferably within the first two
 weeks of the quarter, so I can do my part to help you achieve equal
 access in this course. I am eager to discuss ways we can ensure your
@@ -390,7 +390,7 @@ full participation.
 
 I encourage all students who may benefit from learning more about DRC
 services to [contact the
-DRC](http://www.northeastern.edu/drc/#fp-blog-entry:~:text=Contact%20Information).
+DRC](https://web.archive.org/web/20210327072511/http://www.northeastern.edu/drc/#fp-blog-entry:~:text=Contact%20Information).
 
 ## Technology and Platforms
 
@@ -403,7 +403,7 @@ Hours, and Piazza. Please see the [technology page]({{ site.baseurl
 
 I derived many of our course's lecture's contents and topics, as well
 as assignments, from [Dan
-Friedman](https://legacy.cs.indiana.edu/~dfried/)'s 311 at Indiana
+Friedman](https://web.archive.org/web/20230912060914/https://legacy.cs.indiana.edu/~dfried/)'s 311 at Indiana
 University. We use [Krishnamurthi's `gradescope-racket` autograde
 framework](https://github.com/shriram/gradescope-racket). [Lindsey
 Kuper](https://users.soe.ucsc.edu/~lkuper/) inspires some of this site

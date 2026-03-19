@@ -37,7 +37,7 @@ Handling
 
 For a nice resource walking you through some complex examples, please
 see [the following](
-https://www.cs.bgu.ac.il/~ppl202/wiki.files/class/notebook/4.2CPS.html)
+https://web.archive.org/web/20211025175830if_/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
 (hat tip to a 4400 student). 
 
 

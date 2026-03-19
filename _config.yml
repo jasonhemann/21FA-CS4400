@@ -37,7 +37,7 @@ name                     : "Jason Hemann"
 description              : "Hemann's Programming Languages Course"
 github                   : [metadata]
 # e.g. http://example.com
-url                      : "http://jasonhemann.github.io" 
+url                      : "https://hemann.pl" 
 # the site subpath, e.g. /blog
 baseurl                  : "/21FA-CS4400"
 repository               : "http://github.com/jasonhemann/21FA-CS4400"

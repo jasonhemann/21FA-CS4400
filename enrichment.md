@@ -38,7 +38,7 @@ classes: wide
 - [Hunting the history of Moses Schönfinkel](https://writings.stephenwolfram.com/2020/12/where-did-combinators-come-from-hunting-the-story-of-moses-schonfinkel/)
 - [Kleene's "Church predecessor" via a trip to the dentist](http://link.springer.com/chapter/10.1007%2FBFb0062850)
 
-- [Someone else's explanation of the CPS transformation](https://www.cs.bgu.ac.il/~ppl202/wiki.files/class/notebook/4.2CPS.html)
+- [Someone else's explanation of the CPS transformation](https://web.archive.org/web/20211025175830if_/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)§4.2
 - [A first-order one-pass CPS transformation](https://link.springer.com/content/pdf/10.1007/3-540-45931-6_8.pdf)
 - [Why continuations are coming to Java](https://www.youtube.com/watch?v=9vupFNsND6o)
 
@@ -61,7 +61,7 @@ classes: wide
 - [Philosophy of Computer Science](https://cse.buffalo.edu/~rapaport/Papers/phics.pdf) (Draft text)
 - [Logicomix](https://en.wikipedia.org/wiki/Logicomix) (It's a comic about Russell and early 20th century mathematical logic. ᕕ( ᐛ )ᕗ) 
 
-- [History of Lambda Calculus and Combinatory Logic](https://hope.simons-rock.edu/~pshields/cs/cmpt312/cardone-hindley.pdf)
+- [History of Lambda Calculus and Combinatory Logic](https://web.archive.org/web/20240617124312if_/https://hope.simons-rock.edu/~pshields/cs/cmpt312/cardone-hindley.pdf)
 - [SKI Combinator Tetris](https://dirk.rave.org/combinatris/)
 - [Care for your pet combinator]({{ site.baseurl }}/assets/docs/hindley-seldin-combinatory-a4.pdf)
 
@@ -69,11 +69,11 @@ classes: wide
 - [Purity](https://www.metalevel.at/prolog/purity) and [programming purely in Prolog](http://www.complang.tuwien.ac.at/ulrich/papers/PDF/2008-fdpe.pdf)
 - [Paulson on logic programs as inductive definitions](https://link.springer.com/chapter/10.1007/BFb0038699)
 
-- Chiang's short story ["Seventy-two Letters"](https://ia802706.us.archive.org/33/items/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf) ([Audio version](https://archive.org/details/TedChiangSeventyTwoLetters))
+- Chiang's short story ["Seventy-two Letters"](https://archive.org/download/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf) ([Audio version](https://archive.org/details/TedChiangSeventyTwoLetters))
 
 Additional online textbooks with relevant sections/explanations. 
 
-- [PPL Notes](https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
+- [PPL Notes](https://web.archive.org/web/20211025175830if_/https://www.cs.bgu.ac.il/~mira/ppl-book-full.pdf)
 - Krishnamurthi's [PLAI](http://cs.brown.edu/courses/cs173/2012/book/)
 - [Barzilay's PL class notes](https://pl.barzilay.org/lec98)
 
