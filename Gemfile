@@ -6,9 +6,10 @@ gem "bigdecimal", "~> 4.0"
 gem "base64", "~> 0.2"
 gem "kramdown-parser-gfm", "~> 1.1"
 gem "openssl", "~> 3.2"
+gem "rubyzip", "~> 3.4", require: false
 
 group :jekyll_plugins do
-  gem "jekyll-remote-theme", "~> 0.4.3"
+  gem "jekyll-remote-theme", "~> 0.5.2"
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-sitemap", "~> 1.4"
   gem "jekyll-feed", "~> 0.17.0"
